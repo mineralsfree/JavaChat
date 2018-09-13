@@ -18,10 +18,16 @@ public class Message {
         Gson gson = new Gson();
         return gson.toJson(this);
     }
-    public Message getMessage(String json){
+    public static Message getMessage(String json){
         Gson gson = new Gson();
        return gson.fromJson(json, Message.class);
 
+    }
+    public String getString(){
+       // if (user.getType() == Type.AGENT){
+            return "[Agent] "/*+user.getName() +*/ +" Wrote '" + message + "'.";
+       // } else
+          //  return "Customer" +user.getName()+"Wrote"+message+".";
     }
 
 }

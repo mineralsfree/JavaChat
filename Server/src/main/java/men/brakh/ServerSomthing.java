@@ -23,13 +23,13 @@ public class ServerSomthing extends Thread{
 
             while (true) {
                     word = in.readLine();
-                    word = "kek";
-                    System.out.print(word);
+
+                    System.out.print("recieved message");
                     Message msg = Message.getMessage(word);
                     if(word.equals("stop"))
                 {  break;                }
                 for (ServerSomthing vr : Server.serverList) {
-                    vr.send(word);
+                    vr.send(msg.getString());
 
                     // отослать принятое сообщение с
                     // привязанного клиента всем остальным включая его
@@ -43,7 +43,7 @@ public class ServerSomthing extends Thread{
 
     private void send(String msg) {
         try {
-            out.write("kek" + "\n");
+            out.write(msg + "\n");
             out.flush();
         } catch (IOException ignored) {}
     }

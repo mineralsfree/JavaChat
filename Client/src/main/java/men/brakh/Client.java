@@ -20,14 +20,15 @@ public abstract class Client{
         try {
            Socket clientSocket = new Socket(ip, port);
 
-            readThread= new ReadMsg();
-            writeThread = new WriteMsg();
+
 
         inputUser = new BufferedReader(new InputStreamReader(System.in));
         // читать соообщения с сервера
         in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         // писать туда же
         out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
+            readThread= new ReadMsg();
+            writeThread = new WriteMsg();
         } catch (IOException e) {
             e.printStackTrace();
         }

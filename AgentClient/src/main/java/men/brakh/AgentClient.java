@@ -12,10 +12,12 @@ public class AgentClient extends Client{
     }
 
     public void StringHandler(String msg){
+
         if ((msg.startsWith("/"))&&(msg.length()!=0)){
             String[] msgarr = msg.split(" ");
-            if ((msgarr[0] == "/register")&& (msgarr.length>2)&& (msgarr[1] == "agent")){
+            if ((msgarr[0].equals("/register") && (msgarr.length>2)&& (msgarr[1].equals("agent")))){
                 registerUser(msgarr[2]);
+
             }
             if (msgarr[0] == "/exit"){
                 quit();
