@@ -1,20 +1,21 @@
 package men.brakh;
 
 
-public abstract class User {
+public   class User {
     private String name;
     private Type type;
 
-    User(String name, Type type) {
+   public  User(){
+
+}
+    public User(String name, Type type) {
         this.name = name;
         this.type = type;
     }
-    User(String name) {
+   public User(String name) {
         this.name = name;
-    }    User(){
 
     }
-
     public String getName() {
         return this.name;
     }

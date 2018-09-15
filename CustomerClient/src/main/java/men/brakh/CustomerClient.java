@@ -1,14 +1,14 @@
 package men.brakh;
 
-
 import java.io.IOException;
 
-public class AgentClient extends Client{
+public class CustomerClient extends Client {
     final static String ip = "localhost";
     public static int port = 1488;
-    AgentClient(String ip,int port) throws IOException {
+    public boolean isRegistred = false;
+    CustomerClient(String ip,int port) throws IOException {
 
-            super(ip,port);
+        super(ip,port);
     }
 
     public void StringHandler(String msg){
@@ -22,25 +22,29 @@ public class AgentClient extends Client{
             if (msgarr[0] == "/exit"){
                 quit();
             }
-        } else {
+        } else if(isRegistred) {
             SendServer(new Message(this.getUser(),msg, MessageType.OK).getJson());
 
 
+        } else {
+
+            System.out.println("register to start chat");
+            System.out.println("/register + name");
         }
 
 
 
     }
     public void registerUser(String Username){
-        setUser(new Agent(Username));
+        setUser(new Customer(Username));
         SendServer((new Message(getUser(), "",MessageType.REG)).getJson());
-
+        isRegistred = true;
     }
 
     public static void main(String[] args){
 
         try {
-            new AgentClient(ip,port);
+            new CustomerClient(ip,port);
         } catch (IOException e) {
             e.printStackTrace();
         }

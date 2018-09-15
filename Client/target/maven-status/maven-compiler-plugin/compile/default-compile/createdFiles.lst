@@ -1,7 +1,6 @@
 men\brakh\Client.class
 men\brakh\Message.class
 men\brakh\Type.class
-men\brakh\Chat.class
 men\brakh\Client$ReadMsg.class
 men\brakh\Client$WriteMsg.class
 men\brakh\User.class
