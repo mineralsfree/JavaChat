@@ -6,8 +6,7 @@ package men.brakh;
 
 import java.io.*;
 import java.net.Socket;
-import com.google.gson.Gson;
-import jdk.jfr.events.SocketReadEvent;
+
 
 
 public class ServerSomthing extends Thread{
@@ -31,15 +30,21 @@ switch (msg.getMt()){
                 server.customerQueue.getByAgentName(msg.getUser().getName()).addMessage(msg);
                 server.customerQueue.getByAgentName(msg.getUser().getName()).getCustomerSS().send(msg.getString());
             }
-        }
-        else{
 
+        }
+
+        else{
+            if(isConnected(msg.getUser())){
+                server.customerQueue.getByUserName(msg.getUser().getName()).addMessage(msg);
+                server.customerQueue.getByUserName(msg.getUser().getName()).getAgentSS().send(msg.getString());
+            }
         }
         break;
     case REG:
         SocketUser socketUser = new SocketUser(msg.getUser(),this);
         if (msg.getUser().getType() == Type.AGENT){
             server.agentQueue.AddAgent(socketUser);
+
         }
         else{
             server.customerQueue.AddUser(msg.getUser(),this);
@@ -51,7 +56,8 @@ switch (msg.getMt()){
 
     }
     public boolean isConnected(User user){
-        if (server.customerQueue.getByAgentName(user.getName())!=null)
+        if ((server.customerQueue.getByAgentName(user.getName())!=null)
+            || (server.customerQueue.getByUserName(user.getName())!=null))
             return true;
             else return false;
     }
@@ -67,9 +73,12 @@ switch (msg.getMt()){
 
                     if(word.equals("stop"))
                 {  break;                }
+
+                this.MessageHandler(msg);
+
                 for (ServerSomthing vr : Server.serverList) {
-                    if (vr != this)
-                    vr.send(msg.getString());
+                 //   if (vr != this)
+                   // vr.send(msg.getString());
 
                     // отослать принятое сообщение с
                     // привязанного клиента всем остальным включая его

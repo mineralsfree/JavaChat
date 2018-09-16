@@ -26,6 +26,9 @@ public class Chat {
     public ServerSomthing getCustomerSS(){
         return customer.GetServerSomthing();
     }
+    public ServerSomthing getAgentSS(){
+        return agent.GetServerSomthing();
+    }
 
     public void setAgent(SocketUser agent) {
         this.agent = agent;

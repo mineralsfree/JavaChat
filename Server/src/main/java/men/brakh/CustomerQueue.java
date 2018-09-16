@@ -13,6 +13,7 @@ public class CustomerQueue {
     public Chat PollCustomerChat(){
         return customerQ.pollFirst();
     }
+
     public boolean isQueueEmpty(){
         if (customerQ.peekFirst() == null) {return true;}
         else return false;
@@ -20,12 +21,36 @@ public class CustomerQueue {
     public void addAgent(SocketUser socketUser, Chat chat){
         chat.setAgent(socketUser);
     }
+
     public Chat getByAgentName(String name){
         for (Chat chat : this.customerQ){
-            if (chat.getAgent().GetUser().getName() == name){
+                try {
+                    if (chat.getAgent().GetUser().getName().equals(name)){
+                        return chat;
+                    }
+                } catch (NullPointerException e ){
+
+                }
+
+        }
+        return null;
+    }
+    public Chat getByUserName(String name){
+        for (Chat chat : this.customerQ){
+            if (chat.getCustomer().GetUser().getName().equals(name)){
                 return chat;
             }
         }
         return null;
     }
+    public Chat GetFreeCustomers(){
+        for (Chat chat : customerQ){
+            if (chat.getAgent()==null){
+                return chat;
+            }
+        }
+        return null;
+    }
+
+
 }
