@@ -29,6 +29,7 @@ switch (msg.getMt()){
             if(isConnected(msg.getUser())){
                 server.customerQueue.getByAgentName(msg.getUser().getName()).addMessage(msg);
                 server.customerQueue.getByAgentName(msg.getUser().getName()).getCustomerSS().send(msg.getString());
+                server.logger.log(msg.getString());
             }
 
         }
@@ -37,6 +38,7 @@ switch (msg.getMt()){
             if(isConnected(msg.getUser())){
                 server.customerQueue.getByUserName(msg.getUser().getName()).addMessage(msg);
                 server.customerQueue.getByUserName(msg.getUser().getName()).getAgentSS().send(msg.getString());
+                server.logger.log(msg.getString());
             }
         }
         break;
@@ -51,6 +53,17 @@ switch (msg.getMt()){
         }
         break;
     case EXIT:
+        if (msg.getUser().getType() == Type.AGENT){
+            User usr = server.customerQueue.getByAgentName(msg.getUser().getName()).getCustomer().GetUser();
+            server.customerQueue.AddUser(usr,  server.customerQueue.getByAgentName(msg.getUser().getName()).getCustomer().getSv());
+        }else{
+            SocketUser usr = server.customerQueue.getByUserName(msg.getUser().getName()).getAgent();
+            server.agentQueue.AddAgent(usr);
+
+        }
+
+
+
         break;
 }
 
@@ -76,13 +89,7 @@ switch (msg.getMt()){
 
                 this.MessageHandler(msg);
 
-                for (ServerSomthing vr : Server.serverList) {
-                 //   if (vr != this)
-                   // vr.send(msg.getString());
 
-                    // отослать принятое сообщение с
-                    // привязанного клиента всем остальным включая его
-                }
             }
 
                } catch (IOException e) {

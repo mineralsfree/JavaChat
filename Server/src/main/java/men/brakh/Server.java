@@ -13,6 +13,7 @@ public class Server {
     public static final int PORT = 1488;
     public AgentQueue agentQueue;
     public CustomerQueue customerQueue;
+    public Logger logger;
     public static LinkedList<ServerSomthing> serverList = new LinkedList<ServerSomthing>(); // список всех нитей - экземпляров
     // сервера, слушающих каждый своего клиента
     class ServerHandler extends Thread{
@@ -25,9 +26,12 @@ public class Server {
             TimerTask timerTask= new TimerTask() {
                 @Override
                 public void run() {
-                    if ((customerQueue.GetFreeCustomers() != null) && (!agentQueue.isQueueEmpty())) {
-                        customerQueue.GetFreeCustomers().setAgent(agentQueue.PollAgent());
+                       Chat customerchat = customerQueue.GetFreeCustomers();
+                    if (( customerchat!= null) && (!agentQueue.isQueueEmpty())) {
+                        SocketUser agent = agentQueue.PollAgent();
+                                customerQueue.GetFreeCustomers().setAgent(agent);
                         System.out.println("Pair Created");
+                        logger.log(String.format("Pair [Agent] %s and [Customer] %s", agent.GetUser().getName(), customerchat.getCustomer().GetUser().getName()," Created"));
                     }
 
                 }
@@ -36,10 +40,10 @@ public class Server {
             timer.schedule(timerTask,0,1000);
         }
     }
-    public Server(){
+    public Server() throws IOException {
         agentQueue = new AgentQueue();
         customerQueue = new CustomerQueue();
-
+        logger = new Logger("Log.txt");
         ServerSocket serverS= null;
         try {
             serverS = new ServerSocket(1488);

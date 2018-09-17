@@ -21,6 +21,7 @@ public class AgentClient extends Client{
                 isRegistred=true;
             }
             if (msgarr[0] == "/exit"){
+                
                 quit();
             }
         } else if(isRegistred) {

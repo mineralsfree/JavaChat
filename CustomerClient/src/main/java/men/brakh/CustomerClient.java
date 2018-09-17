@@ -20,6 +20,7 @@ public class CustomerClient extends Client {
 
             }
             if (msgarr[0] == "/exit"){
+
                 quit();
             }
         } else if(isRegistred) {
