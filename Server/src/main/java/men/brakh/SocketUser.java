@@ -14,9 +14,7 @@ public class SocketUser {
         return this.user;
     }
 
-    public ServerSomthing getSv() {
-        return sv;
-    }
+
 
     public User getUser() {
         return user;

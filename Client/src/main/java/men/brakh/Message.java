@@ -15,7 +15,7 @@ public class Message {
 
     }
 
-    public MessageType getMt() {
+    public MessageType getMt(){
         return mt;
     }
 
@@ -35,9 +35,9 @@ public class Message {
     }
     public String getString(){
         if (user.getType() == Type.AGENT){
-            return "[Agent] "+ user.getName()  +" Wrote '" + message + "'.";
+            return "[Agent] "+ user.getName()  +" '" + message + "'.";
         } else
-            return "[Customer]" +user.getName()+" Wrote '"+message+"'.";
+            return "[Customer]" +user.getName()+" '"+message+"'.";
      }
 
 }

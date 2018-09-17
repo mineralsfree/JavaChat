@@ -29,8 +29,10 @@ public class Server {
                        Chat customerchat = customerQueue.GetFreeCustomers();
                     if (( customerchat!= null) && (!agentQueue.isQueueEmpty())) {
                         SocketUser agent = agentQueue.PollAgent();
-                                customerQueue.GetFreeCustomers().setAgent(agent);
-                        System.out.println("Pair Created");
+                        Chat CustomerChat = customerQueue.GetFreeCustomers();
+                        CustomerChat.setAgent(agent);
+                        agent.GetServerSomthing().send("U've been connected to"+CustomerChat.getCustomer().GetUser().getName()+"be polite, your chat is logged");
+                        CustomerChat.getCustomer().GetServerSomthing().send("U've been connected to "+CustomerChat.getAgent().GetUser().getName()+" be polite, your chat is logged");
                         logger.log(String.format("Pair [Agent] %s and [Customer] %s", agent.GetUser().getName(), customerchat.getCustomer().GetUser().getName()," Created"));
                     }
 

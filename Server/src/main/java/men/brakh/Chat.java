@@ -19,7 +19,9 @@ public class Chat {
     public SocketUser getAgent() {
         return agent;
     }
-
+    public boolean isAgentHere(){
+        if (agent==null) return false; else return true;
+    }
     public SocketUser getCustomer() {
         return customer;
     }
@@ -32,6 +34,12 @@ public class Chat {
 
     public void setAgent(SocketUser agent) {
         this.agent = agent;
+        for(Message mg : messageArrayList){
+            this.agent.GetServerSomthing().send(mg.getString());
+        }
+
+
+
     }
 
     public void setCustomer(SocketUser customer) {

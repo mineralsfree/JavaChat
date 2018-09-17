@@ -5,37 +5,57 @@ import java.io.IOException;
 public class CustomerClient extends Client {
     final static String ip = "localhost";
     public static int port = 1488;
+    public String username;
     public boolean isRegistred = false;
+    public boolean Stopped = false;
+    public boolean isSent = false;
     CustomerClient(String ip,int port) throws IOException {
 
         super(ip,port);
     }
 
     public void StringHandler(String msg){
-
-        if ((msg.startsWith("/"))&&(msg.length()!=0)){
-            String[] msgarr = msg.split(" ");
-            if ((msgarr[0].equals("/register") && (msgarr.length>1))){
-                registerUser(msgarr[1]);
-
-            }
-            if (msgarr[0] == "/exit"){
-
-                quit();
-            }
-        } else if(isRegistred) {
-            SendServer(new Message(this.getUser(),msg, MessageType.OK).getJson());
+        if (Stopped){
+            registerUser(username);
+            Stopped = false;
         } else {
-            System.out.println("register to start chat");
-            System.out.println("/register + name");
+            if (isRegistred && !isSent){
+                SendServer((new Message(getUser(), "",MessageType.REG)).getJson());
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                isSent = true;
+            }
+            if ((msg.startsWith("/"))) {
+                String[] msgarr = msg.split(" ");
+                if ((msgarr[0].equals("/register") && (msgarr.length > 1))) {
+                    registerUser(msgarr[1]);
+                    username = msgarr[1];
+
+                }
+                if ((msgarr[0].equals("/leave")) && (isRegistred)) {
+                    SendServer(new Message(this.getUser(), "", MessageType.LEAVE).getJson());
+                    Stopped = true;
+                }
+                if ((msgarr[0].equals("/exit")) && (isRegistred)) {
+
+                    quit();
+                    System.exit(0);
+                }
+            } else if (isRegistred) {
+                SendServer(new Message(this.getUser(), msg, MessageType.OK).getJson());
+            } else {
+                System.out.println("register to start chat");
+                System.out.println("/register + name");
+            }
+
         }
-
-
 
     }
     public void registerUser(String Username){
         setUser(new Customer(Username));
-        SendServer((new Message(getUser(), "",MessageType.REG)).getJson());
         isRegistred = true;
     }
 

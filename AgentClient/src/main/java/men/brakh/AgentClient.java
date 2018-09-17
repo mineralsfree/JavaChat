@@ -20,9 +20,9 @@ public class AgentClient extends Client{
                 registerUser(msgarr[1]);
                 isRegistred=true;
             }
-            if (msgarr[0] == "/exit"){
-                
+            if (msgarr[0].equals("/exit")){
                 quit();
+                System.exit(0);
             }
         } else if(isRegistred) {
             SendServer(new Message(this.getUser(),msg, MessageType.OK).getJson());

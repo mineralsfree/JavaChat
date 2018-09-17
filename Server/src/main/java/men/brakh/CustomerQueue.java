@@ -10,6 +10,9 @@ public class CustomerQueue {
         customerQ.add(new Chat(user,sv));
 
     }
+
+
+
     public Chat PollCustomerChat(){
         return customerQ.pollFirst();
     }
@@ -42,6 +45,9 @@ public class CustomerQueue {
             }
         }
         return null;
+    }
+    public void DeleteChat(Chat chat){
+        customerQ.removeFirstOccurrence(chat);
     }
     public Chat GetFreeCustomers(){
         for (Chat chat : customerQ){
