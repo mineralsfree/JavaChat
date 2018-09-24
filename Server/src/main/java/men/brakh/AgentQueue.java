@@ -2,7 +2,7 @@ package men.brakh;
 
 import java.util.ArrayDeque;
 
-public class AgentQueue {
+public class  AgentQueue {
     private ArrayDeque<SocketUser> agentq = new ArrayDeque<SocketUser>();
     public void AddAgent(SocketUser user){
         agentq.add(user);

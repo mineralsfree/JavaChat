@@ -8,7 +8,6 @@ public class AgentClient extends Client{
     public static int port = 1488;
     public boolean isRegistred = false;
     AgentClient(String ip,int port) throws IOException {
-
             super(ip,port);
     }
 

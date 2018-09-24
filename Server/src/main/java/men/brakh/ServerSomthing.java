@@ -45,7 +45,7 @@ switch (msg.getMt()){
         }
         break;
     case REG:
-        SocketUser socketUser = new SocketUser(msg.getUser(),this);
+            SocketUser socketUser = new SocketUser(msg.getUser(),this);
         if (msg.getUser().getType() == Type.AGENT){
             server.agentQueue.AddAgent(socketUser);
             server.logger.log("Agent "+ msg.getUser().getName()+ " registred in System" );
@@ -73,7 +73,7 @@ switch (msg.getMt()){
     case LEAVE:
         SocketUser usr = server.customerQueue.getByUserName(msg.getUser().getName()).getAgent();
         server.agentQueue.AddAgent(usr);
-        server.customerQueue.getByUserName(msg.getUser().getName()).getAgentSS().send(msg.getString());
+        server.customerQueue.getByUserName(msg.getUser().getName()).getAgentSS().send("User "+ msg.getUser().getName()+ " Left the chat");
         server.customerQueue.DeleteChat(server.customerQueue.getByUserName(msg.getUser().getName()));
         server.logger.log("User "+ msg.getUser().getName()+ " Left the chat" );
 

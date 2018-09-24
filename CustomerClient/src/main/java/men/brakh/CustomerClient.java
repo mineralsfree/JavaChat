@@ -18,6 +18,14 @@ public class CustomerClient extends Client {
         if (Stopped){
             registerUser(username);
             Stopped = false;
+
+            SendServer(new Message(this.getUser(), "", MessageType.REG).getJson());
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            SendServer(new Message(this.getUser(), msg, MessageType.OK).getJson());
         } else {
             if (isRegistred && !isSent){
                 SendServer((new Message(getUser(), "",MessageType.REG)).getJson());
