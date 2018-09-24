@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="ru" dir="ltr">
+  <head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <title>Web implementation of chat with basic functional</title>
+    <script type="text/javascript">
+
+    </script>
+    <script src="lol.js"  type="text/javascript">
+
+    </script>
+  </head>
+    <caption>Chat client</caption>
+  <body>
+    <form name="publish">
+      <input type="text" name="message" id="messageField">
+      <input onclick="sendMessage()"type="submit" value="Отправить">
+    </form>
+
+    <!-- здесь будут появляться входящие сообщения -->
+    <div id="subscribe"></div>
+
+  </body>
+</html>
