@@ -1,6 +1,11 @@
+men\brakh\AgentQueue.class
 men\brakh\Server$ServerHandler$1.class
+men\brakh\SocketUser.class
 men\brakh\Server$ServerHandler.class
 men\brakh\ServerSomthing$1.class
+men\brakh\Chat.class
 men\brakh\Logger.class
 men\brakh\Server.class
+men\brakh\CustomerQueue.class
+men\brakh\WebServer.class
 men\brakh\ServerSomthing.class

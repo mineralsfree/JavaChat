@@ -1,5 +1,7 @@
 package men.brakh;
 
+import com.sun.deploy.security.ValidationState;
+
 import javax.websocket.OnOpen;
 import javax.websocket.server.ServerEndpoint;
 import javax.websocket.CloseReason;
@@ -20,7 +22,11 @@ public class WebServer {
     @OnMessage
     public String onMessage(String message, Session session) {
         System.out.println(Message.getMessage(message).getString());
-
+        try {
+            session.getBasicRemote().sendText(new Message(new User("vasya"),"lol",MessageType.OK).getJson());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (message.equals("quit")) {
 
             try {

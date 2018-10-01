@@ -1,5 +1,5 @@
 
-
+var MsgType = Object.freeze({REG,EXIT,OK,LEAVE})
 var socket = new WebSocket("ws://localhost:8081/chat/chat");
 function autoris() {
     let userName = document.getElementById('login').value;
@@ -17,13 +17,16 @@ function autoris() {
 }
 // отправить сообщение из формы publish
 function sendMessage(msg) {
+    let message = new Message(currentUser, "msg",MsgType.OK);
+    document.getElementById('messageField').value ="";
    socket.send(JSON.stringify(msg));
+    showMessage(msg);
 }
 
 // обработчик входящих сообщений
 socket.onmessage = function(event) {
     let msg = JSON.parse(event.data);
-  showMessage(msg);
+  showMessage(msg.message);
 };
 
 // показать сообщение в div#subscribe

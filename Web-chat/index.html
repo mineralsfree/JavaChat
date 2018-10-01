@@ -37,10 +37,10 @@
                       sendMessage(msg)
                   } else if (currentUser != null) {
                       if(words[0] == "/exit") {
-                          msg = new Message(currentUser, "", "exit")
+                          msg = new Message(currentUser, "", MsgType.EXIT)
                           sendMessage(msg)
-                      } else if(words[0] == "/skip") {
-                          msg = new Message(currentUser, "", "skip")
+                      } else if(words[0] == "/leave") {
+                          msg = new Message(currentUser, "", MsgType.LEAVE)
                           sendMessage(msg)
                       }
                   }
@@ -58,7 +58,7 @@
   </script>
  
       <input type="text" name="message" id="messageField">
-      <input onclick="sendMessage()"type="submit" value="Отправить">
+      <input onclick="sendMessage(document.getElementById('messageField').value)"type="submit" value="Отправить">
     
 
     <!-- здесь будут появляться входящие сообщения -->
