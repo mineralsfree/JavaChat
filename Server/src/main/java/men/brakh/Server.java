@@ -1,5 +1,6 @@
 package men.brakh;
 
+        import javax.websocket.DeploymentException;
         import java.io.IOException;
         import java.net.ServerSocket;
         import java.net.Socket;
@@ -49,8 +50,13 @@ public class Server {
         ServerSocket serverS= null;
         try {
             serverS = new ServerSocket(1488);
-
-        System.out.println("Server not Started");
+            org.glassfish.tyrus.server.Server server = new org.glassfish.tyrus.server.Server("localhost", 8081, "/chat", WebServer.class);
+            try {
+                server.start();
+            } catch (DeploymentException e) {
+                e.printStackTrace();
+            }
+            System.out.println("Server not Started");
         try { new ServerHandler();
             while (true) {
                 // Блокируется до возникновения нового соединения:

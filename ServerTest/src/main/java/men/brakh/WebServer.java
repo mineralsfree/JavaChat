@@ -20,9 +20,10 @@ public class WebServer {
     @OnMessage
     public String onMessage(String message, Session session) {
         System.out.println(message);
+
         if (message.equals("quit")) {
 
-                try {
+            try {
                     session.close(new CloseReason(CloseCodes.NORMAL_CLOSURE, "Game ended"));
                 } catch (IOException e) {
                     throw new RuntimeException(e);
