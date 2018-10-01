@@ -1,5 +1,5 @@
 
-var MsgType = Object.freeze({REG,EXIT,OK,LEAVE})
+var MsgType = Object.freeze({REG:1,EXIT:2,OK:3,LEAVE:4})
 var socket = new WebSocket("ws://localhost:8081/chat/chat");
 function autoris() {
     let userName = document.getElementById('login').value;
@@ -7,8 +7,8 @@ function autoris() {
         return false;
     }
 
-    var currentUser = new User(userName, TYPE);
-  	 var  msg = new Message(currentUser, "", "reg");
+     currentUser = new User(userName, TYPE);
+  	 var  msg = new Message(currentUser, "", MsgType.REG);
     showMessage(new Message(new User("Server", "NONE"), "Hello, " + currentUser.name));
     sendMessage(msg);
     document.getElementById('subscribe').style.display = 'block';
@@ -19,7 +19,7 @@ function autoris() {
 function sendMessage(msg) {
     let message = new Message(currentUser, "msg",MsgType.OK);
     document.getElementById('messageField').value ="";
-   socket.send(JSON.stringify(msg));
+   socket.send(JSON.stringify(message));
     showMessage(msg);
 }
 
