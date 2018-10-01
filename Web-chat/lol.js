@@ -1,6 +1,6 @@
 
 var MsgType = Object.freeze({REG:1,EXIT:2,OK:3,LEAVE:4})
-var socket = new WebSocket("ws://localhost:8081/chat/chat");
+var socket = new WebSocket("ws://localhost:8081/chat");
 function autoris() {
     let userName = document.getElementById('login').value;
     if(userName.length < 3) {
