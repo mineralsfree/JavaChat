@@ -10,7 +10,7 @@ package men.brakh;
 
 
 public class Server {
-
+    private int id = 0;
     public static final int PORT = 1488;
     public AgentQueue agentQueue;
     public CustomerQueue customerQueue;
@@ -62,7 +62,9 @@ public class Server {
 
         System.out.println("Server not Started");
     }
-
+    public synchronized int getNewId() {
+        return ++id;
+    }
 
 
 
