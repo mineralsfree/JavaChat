@@ -19,8 +19,9 @@ public class WebServer {
     }
     @OnMessage
     public String onMessage(String message, Session session) {
-        System.out.println(message);
 
+        System.out.println(message);
+        logger.info("recieved message from ... " + session.getId());
         if (message.equals("quit")) {
 
             try {

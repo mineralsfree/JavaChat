@@ -113,7 +113,7 @@ public abstract class Client{
     }
 
     public void quit(){
-        SendServer((new Message(user,("User "+user.getName()+"left the conversation, I'm really sorry!"),MessageType.EXIT)).getJson());
+        SendServer((new Message(user,(" left the conversation!"),MessageType.EXIT)).getJson());
         System.out.println("Reboot Application to enter it");
 
     }

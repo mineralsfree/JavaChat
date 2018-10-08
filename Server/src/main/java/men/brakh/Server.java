@@ -1,9 +1,9 @@
 package men.brakh;
 
-        import javax.websocket.DeploymentException;
+        import men.brakh.Listener.SocketListener;
+        import men.brakh.Listener.WebSocketListener;
+
         import java.io.IOException;
-        import java.net.ServerSocket;
-        import java.net.Socket;
         import java.util.LinkedList;
         import java.util.Timer;
         import java.util.TimerTask;
@@ -17,7 +17,10 @@ public class Server {
     public Logger logger;
     public static LinkedList<ServerSomthing> serverList = new LinkedList<ServerSomthing>(); // список всех нитей - экземпляров
     // сервера, слушающих каждый своего клиента
+
+
     class ServerHandler extends Thread{
+
         public ServerHandler(){
             this.start();
         }
@@ -27,14 +30,14 @@ public class Server {
             TimerTask timerTask= new TimerTask() {
                 @Override
                 public void run() {
-                       Chat customerchat = customerQueue.GetFreeCustomers();
-                    if (( customerchat!= null) && (!agentQueue.isQueueEmpty())) {
+                       Chat customerChat = customerQueue.GetFreeCustomers();
+                    if (( customerChat!= null) && (!agentQueue.isQueueEmpty())) {
                         SocketUser agent = agentQueue.PollAgent();
                         Chat CustomerChat = customerQueue.GetFreeCustomers();
                         CustomerChat.setAgent(agent);
-                        agent.GetServerSomthing().send("U've been connected to"+CustomerChat.getCustomer().GetUser().getName()+"be polite, your chat is logged");
-                        CustomerChat.getCustomer().GetServerSomthing().send("U've been connected to "+CustomerChat.getAgent().GetUser().getName()+" be polite, your chat is logged");
-                        logger.log(String.format("Pair [Agent] %s and [Customer] %s", agent.GetUser().getName(), customerchat.getCustomer().GetUser().getName()," Created"));
+                        agent.GetSender().ServerSend("U've been connected to "+CustomerChat.getCustomer().GetUser().getName()+" be polite, your chat is logged");
+                        CustomerChat.getCustomer().GetSender().ServerSend("U've been connected to "+CustomerChat.getAgent().GetUser().getName()+" be polite, your chat is logged");
+                        logger.log(String.format("Pair [Agent] %s and [Customer] %s", agent.GetUser().getName(), customerChat.getCustomer().GetUser().getName()," Created"));
                     }
 
                 }
@@ -47,41 +50,21 @@ public class Server {
         agentQueue = new AgentQueue();
         customerQueue = new CustomerQueue();
         logger = new Logger("Log.txt");
-        ServerSocket serverS= null;
+        new ServerHandler();
+        SocketListener socketListener =  new SocketListener(PORT,this);
+        WebSocketListener webSocketListener = new WebSocketListener(this);
         try {
-            serverS = new ServerSocket(1488);
-            org.glassfish.tyrus.server.Server server = new org.glassfish.tyrus.server.Server("localhost", 8081, "", WebServer.class);
-            try {
-                server.start();
-            } catch (DeploymentException e) {
-                e.printStackTrace();
-            }
-            System.out.println("Server not Started");
-        try { new ServerHandler();
-            while (true) {
-                // Блокируется до возникновения нового соединения:
-                Socket socket = serverS.accept();
-                try {
-                    serverList.add(new ServerSomthing(socket, this));
-                    for (ServerSomthing sv : Server.serverList){
-                       // System.out.print(sv.getName());
-                    }
-                    // добавить новое соединенние в список
-                } catch (IOException e) {
-                    // Если завершится неудачей, закрывается сокет,
-                    // в противном случае, нить закроет его:
-                    socket.close();
-                }
-            }
-        } finally {
-            serverS.close();
-
-        }
-        } catch (IOException e) {
+            socketListener.join();
+            webSocketListener.join();
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
+        System.out.println("Server not Started");
     }
+
+
+
 
     public static void main(String[] args) throws IOException {
     new Server();

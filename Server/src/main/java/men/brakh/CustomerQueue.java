@@ -1,13 +1,15 @@
 package men.brakh;
 
+import men.brakh.Sender.Sender;
+
 import java.util.ArrayDeque;
 
 public class CustomerQueue {
     private ArrayDeque<Chat> customerQ = new ArrayDeque<Chat>();
 
 
-    public void AddUser(User user, ServerSomthing sv){
-        customerQ.add(new Chat(user,sv));
+    public void AddUser(User user, Sender sender){
+        customerQ.add(new Chat(user,sender));
 
     }
 

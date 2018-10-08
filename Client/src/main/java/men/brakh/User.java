@@ -5,9 +5,8 @@ public   class User {
     private String name;
     private Type type;
 
-   public  User(){
-
-}
+   public  User() {
+   }
     public User(String name, Type type) {
         this.name = name;
         this.type = type;

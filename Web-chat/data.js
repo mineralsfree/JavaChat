@@ -1,8 +1,11 @@
 class Message {
-    constructor(user, message, status = "ok") {
+    constructor(user, message, mt = "OK") {
         this.user = user;
         this.message = message
-        this.status = status;
+        this.mt = mt;
+    }
+    getUserType(){
+        return this.user.getType();
     }
 }
 class User {
@@ -12,6 +15,9 @@ class User {
     }
     getName(){
         return this.name;
+    }
+    getType(){
+        return this.type;
     }
 
 

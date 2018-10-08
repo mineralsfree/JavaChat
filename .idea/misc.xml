@@ -15,4 +15,9 @@
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_10" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="WebSocketProjectComponent">
+    <option name="server" value="false" />
+    <option name="client" value="false" />
+    <option name="showResources" value="false" />
+  </component>
 </project>

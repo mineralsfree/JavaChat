@@ -9,7 +9,7 @@ public class WebListener {
         }
 
         public static void runServer() {
-            org.glassfish.tyrus.server.Server server = new org.glassfish.tyrus.server.Server("localhost", 8081, "/chat", WebServer.class);
+            org.glassfish.tyrus.server.Server server = new org.glassfish.tyrus.server.Server("localhost", 8081, "", WebServer.class);
 
             try {
                 server.start();

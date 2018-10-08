@@ -22,6 +22,7 @@ public class Logger {
         String Output = "time {"+ a+"}" + msg;
         try {
             fw.write(Output+ "\n");
+            fw.flush();
         } catch (IOException e) {
             e.printStackTrace();
         }

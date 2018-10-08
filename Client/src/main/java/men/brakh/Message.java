@@ -14,6 +14,11 @@ public class Message {
     public Message(){
 
     }
+    public Message(User user, String txt,String mt){
+        this.user = user;
+        this.message = txt;
+        this.mt = MessageType.valueOf(mt);
+    }
 
     public MessageType getMt(){
         return mt;
@@ -33,11 +38,22 @@ public class Message {
        return msg;
 
     }
-    public String getString(){
+    public String getString(String senderStr){
+        if (senderStr.startsWith("men.brakh.Sender.WebSender")){
+            return (this.getJson());
+        }
+
         if (user.getType() == Type.AGENT){
             return "[Agent] "+ user.getName()  +" '" + message + "'.";
         } else
             return "[Customer]" +user.getName()+" '"+message+"'.";
      }
+    public String getString(){
+
+        if (user.getType() == Type.AGENT){
+            return "[Agent] "+ user.getName()  +" '" + message + "'.";
+        } else
+            return "[Customer]" +user.getName()+" '"+message+"'.";
+    }
 
 }

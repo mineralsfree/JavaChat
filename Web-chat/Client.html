@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="ru" dir="ltr">
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <title>Web implementation of chat with basic functional</title>
+    <script src="data.js"  type="text/javascript">
+    </script>
+</head>
+
+
+<caption>Chat client</caption>
+<body>
+<div id="autorisation">
+    <div>
+        <h2>Введите свое имя</h2>
+        <input type="text" id="login">
+        <br>
+        <button type="button" name="button" class="btn" onclick="autoris()">Принять</button>
+    </div>
+</div>
+<div id = "chatBox">
+    <input type="text" name="message" id="messageField">
+    <input onclick="checkAnswer()"type="submit" value="Отправить">
+</div>
+
+
+<script>
+    let TYPE = "CUSTOMER";
+    let left = false;
+    function checkAnswer() {
+        let msg;
+        let msgField = document.getElementById("messageField");
+        let strMessage = msgField.value;
+        let msgarr = strMessage.split(" ");
+
+        if (strMessage && left){
+            msg = new Message(currentUser, "", "REG");
+            left = false;
+        }
+        if ((currentUser != null)&&(!left)) {
+            if (msgarr[0] == "/exit"){
+                msg = new Message(currentUser,"User "+currentUser.getName()+" has exited the conversation, I'm really sorry!","EXIT");
+                sendMessage(msg)
+
+            } else if (msgarr[0] == "/leave"){
+                msg = new Message(currentUser,"User "+currentUser.getName()+" has left the conversation, I'm really sorry!","LEAVE");
+                left = true;
+                sendMessage(msg)
+            } else{
+                msg = new Message(currentUser, strMessage);
+                console.log(msg);
+                sendMessage(msg)
+            }
+
+
+        }
+        msgField.value = "";
+    }
+
+
+</script>
+
+
+
+<!-- здесь будут появляться входящие сообщения -->
+<div id="subscribe">MessageList</div>
+<script src="lol.js"  type="text/javascript">
+</script>
+</body>
+</html>

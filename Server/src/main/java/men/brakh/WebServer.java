@@ -1,19 +1,24 @@
 package men.brakh;
 
 import com.sun.deploy.security.ValidationState;
+import men.brakh.handler.Handler;
+import men.brakh.handler.MessageHandler;
 
-import javax.websocket.OnOpen;
+import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
-import javax.websocket.CloseReason;
-import javax.websocket.OnClose;
-import javax.websocket.OnMessage;
-import javax.websocket.Session;
 import javax.websocket.CloseReason.CloseCodes;
 import java.io.IOException;
+
+
+import java.util.HashMap;
+import java.util.Map;
 import java.util.logging.Logger;
 
 @ServerEndpoint(value = "/chat")
 public class WebServer {
+    public static Server server;
+    public static Map<String, String> hashMap = new HashMap<String, String>();
+
     private Logger logger = Logger.getLogger(this.getClass().getName());
     @OnOpen
     public void onOpen(Session session) {
@@ -21,12 +26,12 @@ public class WebServer {
     }
     @OnMessage
     public String onMessage(String message, Session session) {
-        System.out.println(Message.getMessage(message).getString());
-        try {
-            session.getBasicRemote().sendText(new Message(new User("vasya"),"lol",MessageType.OK).getJson());
-        } catch (IOException e) {
-            e.printStackTrace();
+        Message msg = Message.getMessage(message);
+        if (!hashMap.containsKey(session.getId())){
+            hashMap.put(session.getId(),msg.getUser().getName());
         }
+        new Handler(session,msg,server);
+        System.out.println(Message.getMessage(message).getString("web"));
         if (message.equals("quit")) {
 
             try {
@@ -42,5 +47,11 @@ public class WebServer {
     @OnClose
     public void onClose(Session session, CloseReason closeReason) {
         logger.info(String.format("Session %s closed because of %s", session.getId(), closeReason));
+        if (hashMap.containsKey(session.getId())){
+            String name = hashMap.get(session.getId());
+            Type uType = (server.customerQueue.getByUserName(name).getUserType(name));
+                    Message msg = new Message(new User(name, uType),"",MessageType.EXIT);
+                    new MessageHandler(msg,server,null);
+        }
     }
 }
