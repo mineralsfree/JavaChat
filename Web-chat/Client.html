@@ -12,8 +12,8 @@
 
 
 <caption>Chat client</caption>
-<body>
-<div id="autorisation">
+<body >
+<div id="autorisation" align="center">
     <div>
         <h2>Введите свое имя</h2>
         <input type="text" id="login">
@@ -21,11 +21,13 @@
         <button type="button" name="button" class="btn" onclick="autoris()">Принять</button>
     </div>
 </div>
-<div id = "chatBox">
+<div id = "chatBox" align="center">
     <input type="text" name="message" id="messageField">
     <input onclick="checkAnswer()"type="submit" value="Отправить">
 </div>
-
+<script type="text/javascript">
+    document.getElementById('chatBox').style.display = 'none';
+</script>
 
 <script>
     let TYPE = "CUSTOMER";
@@ -42,11 +44,11 @@
         }
         if ((currentUser != null)&&(!left)) {
             if (msgarr[0] == "/exit"){
-                msg = new Message(currentUser,"User "+currentUser.getName()+" has exited the conversation, I'm really sorry!","EXIT");
+                msg = new Message(currentUser,"User "+currentUser.getName()+" has exited the conversation","EXIT");
                 sendMessage(msg)
 
             } else if (msgarr[0] == "/leave"){
-                msg = new Message(currentUser,"User "+currentUser.getName()+" has left the conversation, I'm really sorry!","LEAVE");
+                msg = new Message(currentUser,"User "+currentUser.getName()+" has left the conversation","LEAVE");
                 left = true;
                 sendMessage(msg)
             } else{
@@ -66,7 +68,7 @@
 
 
 <!-- здесь будут появляться входящие сообщения -->
-<div id="subscribe">MessageList</div>
+<div id="subscribe"></div>
 <script src="lol.js"  type="text/javascript">
 </script>
 </body>

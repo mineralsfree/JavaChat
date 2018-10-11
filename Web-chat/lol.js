@@ -1,6 +1,7 @@
 
 var socket = new WebSocket("ws://localhost:8081/chat");
 function autoris() {
+    document.getElementById('chatBox').removeAttribute("style");
     let userName = document.getElementById('login').value;
     if(userName.length < 3) {
         return false;
@@ -11,7 +12,9 @@ function autoris() {
    // showMessage(new Message(new User("Server", "NONE"), "Hello, " + currentUser.name));
     sendMessage(msg);
     document.getElementById('subscribe').style.display = 'block';
+
     document.getElementById('autorisation').style.display = 'none';
+
 
 }
 // отправить сообщение из формы publish

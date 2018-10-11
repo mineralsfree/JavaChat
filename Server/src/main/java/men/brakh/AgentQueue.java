@@ -1,9 +1,9 @@
 package men.brakh;
 
-import java.util.ArrayDeque;
+import java.util.concurrent.ConcurrentLinkedDeque;
 
 public class  AgentQueue {
-    private ArrayDeque<SocketUser> agentq = new ArrayDeque<SocketUser>();
+    private ConcurrentLinkedDeque<SocketUser> agentq = new ConcurrentLinkedDeque<SocketUser>();
     public void AddAgent(SocketUser user){
         agentq.add(user);
     }

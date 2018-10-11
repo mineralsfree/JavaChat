@@ -3,9 +3,10 @@ package men.brakh;
 import men.brakh.Sender.Sender;
 
 import java.util.ArrayDeque;
+import java.util.concurrent.ConcurrentLinkedDeque;
 
 public class CustomerQueue {
-    private ArrayDeque<Chat> customerQ = new ArrayDeque<Chat>();
+    private ConcurrentLinkedDeque<Chat> customerQ = new ConcurrentLinkedDeque<Chat>();
 
 
     public void AddUser(User user, Sender sender){

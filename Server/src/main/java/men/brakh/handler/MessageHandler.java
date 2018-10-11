@@ -10,10 +10,8 @@ public class MessageHandler {
                 if (msg.getUser().getType() == Type.AGENT) {
                     if (isConnected(msg.getUser(),server)) {
                         server.customerQueue.getByAgentName(msg.getUser().getName()).addMessage(msg);
-
                         Sender targetSender = server.customerQueue.getByAgentName(msg.getUser().getName()).getCustomerSS();
-                        targetSender.send(msg.getString(targetSender.toString())); //Костыли + велосипед
-
+                        targetSender.send(msg.getString(targetSender.toString())); //
                         server.logger.log(msg.getString(sender.toString()));
                     }
 
@@ -68,7 +66,7 @@ public class MessageHandler {
         }
 
     }
-    public boolean isConnected (User user,Server server){ //checks if there is a connection between user anf agent
+    public boolean isConnected (User user,Server server){ //checks if there is a connection between user and agent
         switch (user.getType()) {
             case AGENT:
                 if (server.customerQueue.getByAgentName(user.getName()) != null) return true;
