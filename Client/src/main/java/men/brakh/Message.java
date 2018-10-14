@@ -38,22 +38,22 @@ public class Message {
        return msg;
 
     }
-    public String getString(String senderStr){
-        if (senderStr.startsWith("men.brakh.Sender.WebSender")){
+    public String getString(String senderStr) {
             return (this.getJson());
-        }
+    }
 
-        if (user.getType() == Type.AGENT){
-            return "[Agent] "+ user.getName()  +" '" + message + "'.";
-        } else
-            return "[Customer]" +user.getName()+" '"+message+"'.";
-     }
     public String getString(){
 
-        if (user.getType() == Type.AGENT){
+        if (user.getType() == Type.AGENT)
             return "[Agent] "+ user.getName()  +" '" + message + "'.";
-        } else
+         else if (user.getType() == Type.CUSTOMER)
             return "[Customer]" +user.getName()+" '"+message+"'.";
+    else return  "[server]"+ "'"+message+"'.";
     }
+
+    public String getMessage() {
+        return message;
+    }
+
 
 }

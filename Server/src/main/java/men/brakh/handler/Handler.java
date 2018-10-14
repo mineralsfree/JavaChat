@@ -11,6 +11,7 @@ public class Handler {
     public Session session;
 
    public Handler(Session session, Message msg, Server server){
+
        Sender sender = new WebSender(session);
        new MessageHandler(msg,server,sender);
       // server.logger.log("Someone has connected");

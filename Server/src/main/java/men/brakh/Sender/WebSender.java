@@ -30,6 +30,15 @@ public class WebSender implements Sender{
         }
 
     }
+    public void ServerReg(String msg){
+        Message message = new Message(new User("server"),msg, MessageType.REG);
+        try {
+            session.getBasicRemote().sendText(message.getJson());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
 
     public Session getSession() {
         return session;

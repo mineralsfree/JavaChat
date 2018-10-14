@@ -10,23 +10,24 @@ public abstract class Client{
     private BufferedReader in;
     private BufferedWriter out;
     private BufferedReader inputUser;
-
+    private WebSocketUser webSocketUser;
     private ReadMsg readThread;
     private WriteMsg writeThread;
     public Client(){
 
     }
+
     public Client(String ip,int port){
         try {
            Socket clientSocket = new Socket(ip, port);
-
+            webSocketUser = new WebSocketUser(this);
 
 
         inputUser = new BufferedReader(new InputStreamReader(System.in));
         // читать соообщения с сервера
-        in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+    //    in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         // писать туда же
-        out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
+        //out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
             readThread= new ReadMsg();
             writeThread = new WriteMsg();
         } catch (IOException e) {
@@ -35,8 +36,6 @@ public abstract class Client{
         try {
             readThread.join();
             writeThread.join();
-
-
         } catch (InterruptedException e){
             e.printStackTrace();
         }
@@ -60,12 +59,14 @@ public abstract class Client{
 
             String str;
             while (!isKilled) {
-                try {
-                    str = in.readLine(); // ждем сообщения с сервера
-                    System.out.println(str);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+              //  try {
+                  //  str = in.readLine(); // ждем сообщения с сервера
+                                        // здесь может быть десериализация
+
+                //    System.out.println("lol");
+            //    } catch (IOException e) {
+             //       e.printStackTrace();
+              //  }
 
                 //checkServerResponse(str);
             }
@@ -86,13 +87,15 @@ public abstract class Client{
 
                 Scanner scan = new Scanner(System.in);
                 answer = scan.nextLine();
-                try {
+           //     try {
+
                     StringHandler(answer);
-                    out.flush();
+
+//                    out.flush();
                     //SendServer(userWord);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+       //         } catch (IOException e) {
+       //             e.printStackTrace();
+        //        }
 
                 // чистим
 
@@ -100,12 +103,14 @@ public abstract class Client{
         }
     }
     public void SendServer(String msg){
-        try {
-            out.write (msg  + "\n");
-            out.flush();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    //    try {
+            webSocketUser.sendMessage(msg);
+      //      out.write (msg  + "\n");
+
+     //       out.flush();
+   //     } catch (IOException e) {
+    //        e.printStackTrace();
+    //    }
 
     }
     public void setUser(User user){
@@ -116,6 +121,10 @@ public abstract class Client{
         SendServer((new Message(user,(" left the conversation!"),MessageType.EXIT)).getJson());
         System.out.println("Reboot Application to enter it");
 
+    }
+
+    public WebSocketUser getWebSocketUser() {
+        return webSocketUser;
     }
 }
 

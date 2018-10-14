@@ -6,3 +6,5 @@
 *.jar
 Log.txt
 *.txt
+*.lst
+*.xml

@@ -41,9 +41,33 @@ public class CustomerQueue {
         }
         return null;
     }
+
+    public Chat getdAgentID(int id){
+        for (Chat chat : this.customerQ){
+            try {
+                if (chat.getAgent().GetUser().getId() == id){
+                    return chat;
+                }
+            } catch (NullPointerException e ){
+
+            }
+
+        }
+        return null;
+    }
+
     public Chat getByUserName(String name){
         for (Chat chat : this.customerQ){
             if (chat.getCustomer().GetUser().getName().equals(name)){
+                return chat;
+            }
+        }
+        return null;
+    }
+
+    public Chat getByID(int id){
+        for (Chat chat : this.customerQ){
+            if ((chat.getCustomer().GetUser().getId()== id) || chat.getAgent().GetUser().getId() == id){
                 return chat;
             }
         }

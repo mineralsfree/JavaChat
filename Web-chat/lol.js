@@ -7,7 +7,7 @@ function autoris() {
         return false;
     }
 
-     currentUser = new User(userName, TYPE);
+     currentUser = new User(userName, TYPE,-1);
   	 var  msg = new Message(currentUser, "", "REG");
    // showMessage(new Message(new User("Server", "NONE"), "Hello, " + currentUser.name));
     sendMessage(msg);
@@ -26,6 +26,10 @@ function sendMessage(msg) {
 // обработчик входящих сообщений
 socket.onmessage = function(event) {
     let msg = JSON.parse(event.data);
+    if (msg.getType()==="REG"){
+        currentUser.setID(msg.message);
+        return;
+    }
   showMessage(msg);
 };
 
