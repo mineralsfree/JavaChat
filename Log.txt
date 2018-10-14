@@ -1,4 +1,8 @@
+time {2018-10-14T20:06:39.106}Agent Vasya registered in System
+time {2018-10-14T20:06:59.004}Customer Vasya registered in System
 time {2018-10-14T20:06:59.444}Pair [Agent] Vasya and [Customer] Vasya
 time {2018-10-14T20:07:07.397}{"user":{"name":"Vasya","type":"AGENT","id":1},"message":"Hi","mt":"OK"}
 time {2018-10-14T20:07:37.293}User Vasya Left the chat
 time {2018-10-14T20:07:43.996}Customer Vasya registered in System
+time {2018-10-14T20:07:44.458}Pair [Agent] Vasya and [Customer] Vasya
+time {2018-10-14T20:07:52.492}Customer Vasya closed Application
