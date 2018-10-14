@@ -1,0 +1,4 @@
+time {2018-10-14T20:06:59.444}Pair [Agent] Vasya and [Customer] Vasya
+time {2018-10-14T20:07:07.397}{"user":{"name":"Vasya","type":"AGENT","id":1},"message":"Hi","mt":"OK"}
+time {2018-10-14T20:07:37.293}User Vasya Left the chat
+time {2018-10-14T20:07:43.996}Customer Vasya registered in System
