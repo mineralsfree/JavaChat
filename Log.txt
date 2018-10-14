@@ -1,20 +1,8 @@
-time {2018-10-14T18:31:10.819}Agent Petya registered in System
-time {2018-10-14T18:31:35.772}Customer Vasua registered in System
-time {2018-10-14T18:31:36.418}Pair [Agent] Petya and [Customer] Vasua
-time {2018-10-14T18:32:15.713}{"user":{"name":"Petya","type":"AGENT","id":1},"message":"hello","mt":"OK"}
-time {2018-10-14T18:32:27.215}{"user":{"name":"Petya","type":"AGENT","id":1},"message":"sdfg","mt":"OK"}
-time {2018-10-14T18:33:05.609}Agent Vasua registered in System
-time {2018-10-14T18:33:11.721}Customer skjsadfg registered in System
-time {2018-10-14T18:33:12.222}{"user":{"name":"skjsadfg","type":"CUSTOMER","id":4},"message":"hello","mt":"OK"}
-time {2018-10-14T18:33:12.449}Pair [Agent] Vasua and [Customer] skjsadfg
-time {2018-10-14T18:33:20.424}{"user":{"name":"Vasua","type":"AGENT","id":3},"message":"asdfasd","mt":"OK"}
-time {2018-10-14T18:33:30.541}Agent Vasua registered in System
-time {2018-10-14T18:34:05.461}Customer Vasua registered in System
-time {2018-10-14T18:34:05.466}Pair [Agent] Vasua and [Customer] Vasua
-time {2018-10-14T18:34:08.916}Customer Vsua registered in System
-time {2018-10-14T18:34:09.417}{"user":{"name":"Vsua","type":"CUSTOMER","id":7},"message":"hello","mt":"OK"}
-time {2018-10-14T18:34:11.903}{"user":{"name":"Vsua","type":"CUSTOMER","id":7},"message":"help","mt":"OK"}
-time {2018-10-14T18:34:16.894}{"user":{"name":"Vsua","type":"CUSTOMER","id":7},"message":"please","mt":"OK"}
-time {2018-10-14T18:34:30.273}Agent Petya registered in System
-time {2018-10-14T18:34:30.481}Pair [Agent] Petya and [Customer] Vsua
-time {2018-10-14T18:34:33.551}{"user":{"name":"Petya","type":"AGENT","id":8},"message":"Hello","mt":"OK"}
+time {2018-10-14T20:06:39.106}Agent Vasya registered in System
+time {2018-10-14T20:06:59.004}Customer Vasya registered in System
+time {2018-10-14T20:06:59.444}Pair [Agent] Vasya and [Customer] Vasya
+time {2018-10-14T20:07:07.397}{"user":{"name":"Vasya","type":"AGENT","id":1},"message":"Hi","mt":"OK"}
+time {2018-10-14T20:07:37.293}User Vasya Left the chat
+time {2018-10-14T20:07:43.996}Customer Vasya registered in System
+time {2018-10-14T20:07:44.458}Pair [Agent] Vasya and [Customer] Vasya
+time {2018-10-14T20:07:52.492}Customer Vasya closed Application

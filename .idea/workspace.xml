@@ -37,7 +37,7 @@
           <entry key="css" value="2" />
           <entry key="html" value="12" />
           <entry key="java" value="233" />
-          <entry key="js" value="17" />
+          <entry key="js" value="18" />
           <entry key="txt" value="1" />
           <entry key="xml" value="26" />
         </counts>
@@ -48,7 +48,7 @@
           <entry key="CSS" value="2" />
           <entry key="HTML" value="12" />
           <entry key="JAVA" value="233" />
-          <entry key="JavaScript" value="17" />
+          <entry key="JavaScript" value="18" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="TML" value="5" />
           <entry key="XML" value="21" />
@@ -58,7 +58,7 @@
         <counts>
           <entry key="html" value="423" />
           <entry key="java" value="4293" />
-          <entry key="js" value="841" />
+          <entry key="js" value="949" />
           <entry key="xml" value="28" />
         </counts>
       </usages-collector>
@@ -66,7 +66,7 @@
         <counts>
           <entry key="HTML" value="423" />
           <entry key="JAVA" value="4293" />
-          <entry key="JavaScript" value="841" />
+          <entry key="JavaScript" value="949" />
           <entry key="XML" value="28" />
         </counts>
       </usages-collector>
@@ -127,8 +127,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Web-chat/lol.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="863">
-              <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+            <state relative-caret-position="442">
+              <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web-chat/data.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -180,18 +189,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Listener/WebSocketListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="115" lean-forward="true" selection-start-line="19" selection-start-column="115" selection-end-line="19" selection-end-column="115" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -238,10 +235,8 @@
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/ConsoleSender.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/SocketUser.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Chat.java" />
-        <option value="$PROJECT_DIR$/Web-chat/lol.js" />
         <option value="$PROJECT_DIR$/Web-chat/Agent.html" />
         <option value="$PROJECT_DIR$/Web-chat/Client.html" />
-        <option value="$PROJECT_DIR$/Web-chat/data.js" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Server.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/WebSender.java" />
         <option value="$PROJECT_DIR$/Client/pom.xml" />
@@ -255,6 +250,8 @@
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/CustomerQueue.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/MessageHandler.java" />
         <option value="$PROJECT_DIR$/Client/src/main/java/men/brakh/WebSocketUser.java" />
+        <option value="$PROJECT_DIR$/Web-chat/data.js" />
+        <option value="$PROJECT_DIR$/Web-chat/lol.js" />
       </list>
     </option>
   </component>
@@ -458,7 +455,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539536683152" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539537196958" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../RSAcipher" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -478,7 +475,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AgentClient">
+  <component name="RunManager" selected="Application.CustomerClient">
     <configuration name="AgentClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="men.brakh.AgentClient" />
       <module name="AgentClient" />
@@ -539,8 +536,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AgentClient" />
         <item itemvalue="Application.CustomerClient" />
+        <item itemvalue="Application.AgentClient" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.WebListener" />
       </list>
@@ -562,12 +559,12 @@
       <workItem from="1538751313008" duration="2101000" />
       <workItem from="1538847556429" duration="29235000" />
       <workItem from="1538938451034" duration="19761000" />
-      <workItem from="1539272775319" duration="21943000" />
+      <workItem from="1539272775319" duration="22297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84345000" />
+    <option name="totallyTimeSpent" value="84699000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -591,7 +588,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47654584" weight="0.32321042" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47654584" visible="true" weight="0.32321042" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.47707888" weight="0.39479393" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -801,13 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
           <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web-chat/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1153,10 +1143,17 @@
     <entry file="file://$PROJECT_DIR$/Web-chat/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Web-chat/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Web-chat/lol.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="863">
-          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+        <state relative-caret-position="442">
+          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
         </state>
       </provider>
     </entry>
