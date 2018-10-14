@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.logging.Logger;
 
 @ServerEndpoint(value = "/chat")
-public class WebServer {
+public class    WebServer {
     public static Server server;
     public static Map<String, String> hashMap = new HashMap<String, String>();
 
@@ -41,7 +41,7 @@ public class WebServer {
             }
 
         }
-        return message;
+        return null;
     }
 
     @OnClose
@@ -49,9 +49,9 @@ public class WebServer {
         logger.info(String.format("Session %s closed because of %s", session.getId(), closeReason));
         if (hashMap.containsKey(session.getId())){
             String name = hashMap.get(session.getId());
-            Type uType = (server.customerQueue.getByUserName(name).getUserType(name));
-                    Message msg = new Message(new User(name, uType),"",MessageType.EXIT);
-                    new MessageHandler(msg,server,null);
+          //  Type uType = (server.customerQueue.getByUserID(3).getUserType(name));
+              //      Message msg = new Message(new User(name, uType),"",MessageType.EXIT);
+              //      new MessageHandler(msg,server,null);
         }
     }
 }

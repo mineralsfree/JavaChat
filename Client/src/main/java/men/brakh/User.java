@@ -19,6 +19,9 @@ public   class User {
     public void setId(int id){
         this.id = id;
     }
+    public void setId(String id){
+       this.id = Integer.parseInt(id);
+    }
     public User(String name) {
         this.name = name;
         this.id = -1;

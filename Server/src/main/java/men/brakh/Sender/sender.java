@@ -10,4 +10,8 @@ public interface Sender {
     default void ServerSend(String msg){
         send(msg);
     }
+    default void ServerReg(String msg){
+        send(msg);
+
+    }
 }

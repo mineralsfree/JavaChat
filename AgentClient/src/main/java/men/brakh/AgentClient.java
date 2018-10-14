@@ -26,7 +26,6 @@ public class AgentClient extends Client{
         } else if(isRegistred) {
             SendServer(new Message(this.getUser(),msg, MessageType.OK).getJson());
 
-
         } else{
             System.out.println("register to start chat");
             System.out.println("/register + name");
