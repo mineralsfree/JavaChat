@@ -5,9 +5,11 @@ import men.brakh.Sender.Sender;
 public class SocketUser {
     private User user;
     private Sender sender;
-    public SocketUser(User user, Sender sender) {
+    private int Chatid;
+    public SocketUser(User user, Sender sender  ) {
         this.user = user;
         this.sender = sender;
+
     }
     public  Sender  GetSender(){
         return this.sender;
@@ -16,7 +18,13 @@ public class SocketUser {
         return this.user;
     }
 
+    public int getChatid() {
+        return Chatid;
+    }
 
+    public void setChatid(int chatid) {
+        Chatid = chatid;
+    }
 
     public User getUser() {
         return user;

@@ -1,8 +1,9 @@
 class Message {
-    constructor(user, message, mt = "OK") {
+    constructor(user, message, mt = "OK",chatid = -1) {
         this.user = user;
         this.message = message
         this.mt = mt;
+        this.chatid = chatid;
 
     }
     getUserType(){

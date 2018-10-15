@@ -7,14 +7,14 @@ import java.util.concurrent.ConcurrentLinkedDeque;
 
 public class CustomerQueue {
     private ConcurrentLinkedDeque<Chat> customerQ = new ConcurrentLinkedDeque<Chat>();
-
-
+    private int chatid = 0;
     public void AddUser(User user, Sender sender){
-        customerQ.add(new Chat(user,sender));
-
+        customerQ.add(new Chat(user,sender, getNextid()));
     }
 
-
+synchronized private int getNextid(){
+        return chatid++;
+}
 
     public Chat PollCustomerChat(){
         return customerQ.pollFirst();
@@ -68,7 +68,7 @@ public class CustomerQueue {
     public Chat getByID(int id){
         for (Chat chat : this.customerQ){
             if ((chat.getCustomer().GetUser().getId()== id) || chat.getAgent().GetUser().getId() == id){
-                return chat;
+
             }
         }
         return null;
@@ -84,6 +84,7 @@ public class CustomerQueue {
         }
         return null;
     }
+
 
 
 }

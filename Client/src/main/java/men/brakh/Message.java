@@ -5,11 +5,18 @@ public class Message {
     private User user;
     private String message;
     private MessageType mt;
+    private int chatID;
 
     public Message(User user, String txt,MessageType mt){
         this.user = user;
         this.message = txt;
         this.mt = mt;
+    }
+    public Message(User user, String txt,MessageType mt,int chatID){
+        this.user = user;
+        this.message = txt;
+        this.mt = mt;
+        this.chatID =chatID;
     }
     public Message(){
 
@@ -18,6 +25,10 @@ public class Message {
         this.user = user;
         this.message = txt;
         this.mt = MessageType.valueOf(mt);
+    }
+
+    public int getChatID() {
+        return chatID;
     }
 
     public MessageType getMt(){

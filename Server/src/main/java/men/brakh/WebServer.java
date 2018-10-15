@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 @ServerEndpoint(value = "/chat")
 public class    WebServer {
     public static Server server;
-    public static Map<String, String> hashMap = new HashMap<String, String>();
+    public static Map<String, Integer> hashMap = new HashMap<String, Integer>();
 
     private Logger logger = Logger.getLogger(this.getClass().getName());
     @OnOpen
@@ -28,7 +28,7 @@ public class    WebServer {
     public String onMessage(String message, Session session) {
         Message msg = Message.getMessage(message);
         if (!hashMap.containsKey(session.getId())){
-            hashMap.put(session.getId(),msg.getUser().getName());
+            hashMap.put(session.getId(),msg.getUser().getId());
         }
         new Handler(session,msg,server);
         System.out.println(Message.getMessage(message).getString("web"));
@@ -48,10 +48,10 @@ public class    WebServer {
     public void onClose(Session session, CloseReason closeReason) {
         logger.info(String.format("Session %s closed because of %s", session.getId(), closeReason));
         if (hashMap.containsKey(session.getId())){
-            String name = hashMap.get(session.getId());
-          //  Type uType = (server.customerQueue.getByUserID(3).getUserType(name));
-              //      Message msg = new Message(new User(name, uType),"",MessageType.EXIT);
-              //      new MessageHandler(msg,server,null);
+            Integer id = hashMap.get(session.getId());
+            Type uType = (server.customerQueue.getByID(id).getUserType(id));
+                    Message msg = new Message(new User("any", uType,id),"",MessageType.EXIT);
+                   new MessageHandler(msg,server,null);
         }
     }
 }

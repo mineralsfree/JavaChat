@@ -12,6 +12,9 @@ public interface Sender {
     }
     default void ServerReg(String msg){
         send(msg);
-
     }
+    default void ServerRegID(String msg){
+        send(msg);
+    }
+
 }

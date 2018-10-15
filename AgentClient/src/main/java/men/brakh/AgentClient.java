@@ -24,7 +24,7 @@ public class AgentClient extends Client{
                 System.exit(0);
             }
         } else if(isRegistred) {
-            SendServer(new Message(this.getUser(),msg, MessageType.OK).getJson());
+            SendServer(new Message(this.getUser(),msg, MessageType.OK,getChat()).getJson());
 
         } else{
             System.out.println("register to start chat");
@@ -36,7 +36,7 @@ public class AgentClient extends Client{
     }
     public void registerUser(String Username){
         setUser(new Agent(Username));
-        SendServer((new Message(getUser(), "",MessageType.REG)).getJson());
+        SendServer((new Message(getUser(), "",MessageType.REG,getChat())).getJson());
 
     }
 

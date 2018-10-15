@@ -1,12 +1,9 @@
 package men.brakh;
-
-        import men.brakh.Listener.SocketListener;
         import men.brakh.Listener.WebSocketListener;
 
         import java.io.IOException;
         import java.util.LinkedList;
-        import java.util.Timer;
-        import java.util.TimerTask;
+
 
 
 public class Server {
@@ -19,42 +16,27 @@ public class Server {
     // сервера, слушающих каждый своего клиента
 
 
-    class ServerHandler extends Thread{
 
-        public ServerHandler(){
-            this.start();
-        }
-        @Override
-        public void  run(){
-            Timer timer = new Timer();
-            TimerTask timerTask= new TimerTask() {
-                @Override
-                public void run() {
-                       Chat customerChat = customerQueue.GetFreeCustomers();
-                    if (( customerChat!= null) && (!agentQueue.isQueueEmpty())) {
-                        SocketUser agent = agentQueue.PollAgent();
-                        Chat CustomerChat = customerQueue.GetFreeCustomers();
-                        CustomerChat.setAgent(agent);
-                        agent.GetSender().ServerSend("U've been connected to "+CustomerChat.getCustomer().GetUser().getName()+" be polite, your chat is logged");
-                        CustomerChat.getCustomer().GetSender().ServerSend("U've been connected to "+CustomerChat.getAgent().GetUser().getName()+" be polite, your chat is logged");
-                        logger.log(String.format("Pair [Agent] %s and [Customer] %s", agent.GetUser().getName(), customerChat.getCustomer().GetUser().getName()," Created"));
-                    }
-
-                }
-            };
-
-            timer.schedule(timerTask,0,1000);
+    public synchronized void checkFreeAgents(){
+        Chat customerChat = customerQueue.GetFreeCustomers();
+        if (( customerChat!= null) && (!agentQueue.isQueueEmpty())) {
+            SocketUser agent = agentQueue.PollAgent();
+            Chat CustomerChat = customerQueue.GetFreeCustomers();
+            CustomerChat.setAgent(agent);
+            agent.GetSender().ServerRegID(String.valueOf(CustomerChat.getId()));
+            agent.GetSender().ServerSend("U've been connected to "+CustomerChat.getCustomer().GetUser().getName()+" be polite, your chat is logged");
+            CustomerChat.getCustomer().GetSender().ServerSend("U've been connected to "+CustomerChat.getAgent().GetUser().getName()+" be polite, your chat is logged");
+            logger.log(String.format("Pair [Agent] %s and [Customer] %s", agent.GetUser().getName(), customerChat.getCustomer().GetUser().getName()," Created"));
         }
     }
     public Server() throws IOException {
         agentQueue = new AgentQueue();
         customerQueue = new CustomerQueue();
         logger = new Logger("Log.txt");
-        new ServerHandler();
-        SocketListener socketListener =  new SocketListener(PORT,this);
+    //    SocketListener socketListener =  new SocketListener(PORT,this);
         WebSocketListener webSocketListener = new WebSocketListener(this);
         try {
-            socketListener.join();
+          //  socketListener.join();
             webSocketListener.join();
         } catch (InterruptedException e) {
             e.printStackTrace();

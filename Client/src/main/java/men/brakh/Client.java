@@ -13,13 +13,15 @@ public abstract class Client{
     private WebSocketUser webSocketUser;
     private ReadMsg readThread;
     private WriteMsg writeThread;
+    private int chat = -1;
+
     public Client(){
 
     }
 
     public Client(String ip,int port){
-        try {
-           Socket clientSocket = new Socket(ip, port);
+  //      try {
+//           Socket clientSocket = new Socket(ip, port);
             webSocketUser = new WebSocketUser(this);
 
 
@@ -30,9 +32,9 @@ public abstract class Client{
         //out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
             readThread= new ReadMsg();
             writeThread = new WriteMsg();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        } catch (IOException e) {
+ //           e.printStackTrace();
+ //       }
         try {
             readThread.join();
             writeThread.join();
@@ -125,6 +127,14 @@ public abstract class Client{
 
     public WebSocketUser getWebSocketUser() {
         return webSocketUser;
+    }
+
+    public void setChat(int chat) {
+        this.chat = chat;
+    }
+
+    public int getChat() {
+        return chat;
     }
 }
 

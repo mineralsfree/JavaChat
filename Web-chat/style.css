@@ -2,6 +2,9 @@
     border: 2px chocolate;
     background-color: mediumaquamarine;
 }
+#messageHandler{
+    display:-webkit-box;
+}
 .btn{
     margin: 20px 0;
 

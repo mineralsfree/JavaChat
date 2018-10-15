@@ -9,11 +9,12 @@ import java.util.ArrayList;
 public class Chat {
     private SocketUser agent;
     private SocketUser customer;
+    private int id;
     private ArrayList<Message> messageArrayList = new ArrayList<Message>();
-    public Chat(User user, Sender ss){
+    public Chat(User user, Sender ss,int id){
         this.customer = new SocketUser(user,ss);
         this.agent = null;
-
+        this.id = id;
     }
     public Type getUserType(String name){
         if (getAgent().getUser().getName().equals(name)){
@@ -24,8 +25,14 @@ public class Chat {
         }
         return null;
     }
-    public void setAgent(Agent agent, Sender ss){
-        this.agent = new SocketUser(agent,ss);
+    public Type getUserType(int id){
+        if (getAgent().getUser().getId()==id){
+            return Type.AGENT;
+        }
+        if (getCustomer().getUser().getId()==id){
+            return Type.CUSTOMER;
+        }
+        return null;
     }
     public SocketUser getAgent() {
         return agent;
@@ -45,6 +52,7 @@ public class Chat {
 
     public void setAgent(SocketUser agent) {
         this.agent = agent;
+
         for(Message mg : messageArrayList){
             this.agent.GetSender().send(mg.getString(this.agent.GetSender().toString()));
         }
@@ -60,4 +68,11 @@ public class Chat {
         messageArrayList.add(msg);
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }

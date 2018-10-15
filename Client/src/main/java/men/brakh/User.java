@@ -15,6 +15,7 @@ public   class User {
     public User(String name, Type type, int id) {
         this.name = name;
         this.type = type;
+        this.id = id;
     }
     public void setId(int id){
         this.id = id;

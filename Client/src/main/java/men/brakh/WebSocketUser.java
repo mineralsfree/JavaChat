@@ -43,6 +43,10 @@ public class WebSocketUser {
             usr.setId(id);
             return;
         }
+        if (msg.getMt().equals(MessageType.ID)){
+           client.setChat(msg.getChatID());
+            return;
+        }
 
         System.out.println(str);
     }
