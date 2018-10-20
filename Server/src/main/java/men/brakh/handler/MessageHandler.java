@@ -9,19 +9,19 @@ public class MessageHandler {
         switch (msg.getMt()) {
             case OK:
                 if (msg.getUser().getType() == Type.AGENT) {
-                    if (isConnected(msg.getUser(),server,chatid)) {
+                    if (isConnected(msg.getUser(),server)) {
 
                         server.customerQueue.getByID(msg.getUser().getId()).addMessage(msg);
 
                         Sender targetSender = server.customerQueue.getByID(msg.getUser().getId()).getCustomerSS();
-                        targetSender.send(msg.getString(targetSender.toString())); //Костыли + велосипед
+                        targetSender.send(msg.getString(targetSender.toString()));
 
                         server.logger.log(msg.getString());
                     }
 
                 } else {
                     server.customerQueue.getByID(msg.getUser().getId()).addMessage(msg);
-                    if (isConnected(msg.getUser(),server,chatid)) {
+                    if (isConnected(msg.getUser(),server)) {
                         Sender targetSender = server.customerQueue.getByID(msg.getUser().getId()).getAgentSS();
                         targetSender.send(msg.getString(targetSender.toString()));
 
@@ -78,7 +78,7 @@ public class MessageHandler {
         }
 
     }
-    public boolean isConnected (User user,Server server,int chatid){ //checks if there is a connection between user and agent
+    public boolean isConnected (User user,Server server){ //checks if there is a connection between user and agent
 
         switch (user.getType()) {
             case AGENT:

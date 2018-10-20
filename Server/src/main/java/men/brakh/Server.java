@@ -1,11 +1,12 @@
 package men.brakh;
         import men.brakh.Listener.WebSocketListener;
+        import org.springframework.context.annotation.Configuration;
+
 
         import java.io.IOException;
         import java.util.LinkedList;
 
-
-
+@Configuration
 public class Server {
     private int id = 0;
     public static final int PORT = 1488;
@@ -35,12 +36,12 @@ public class Server {
         logger = new Logger("Log.txt");
     //    SocketListener socketListener =  new SocketListener(PORT,this);
         WebSocketListener webSocketListener = new WebSocketListener(this);
-        try {
+   //     try {
           //  socketListener.join();
-            webSocketListener.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+      //      webSocketListener.join();
+  //      } catch (InterruptedException e) {
+    //        e.printStackTrace();
+   //     }
 
         System.out.println("Server not Started");
     }

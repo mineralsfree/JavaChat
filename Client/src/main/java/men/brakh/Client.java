@@ -37,7 +37,7 @@ public abstract class Client{
  //       }
         try {
             readThread.join();
-            writeThread.join();
+          //  writeThread.join();
         } catch (InterruptedException e){
             e.printStackTrace();
         }
@@ -120,7 +120,7 @@ public abstract class Client{
     }
 
     public void quit(){
-        SendServer((new Message(user,(" left the conversation!"),MessageType.EXIT)).getJson());
+        SendServer((new Message(user,(" left the conversation!"),MessageType.EXIT,this.chat)).getJson());
         System.out.println("Reboot Application to enter it");
 
     }

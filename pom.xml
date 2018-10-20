@@ -14,7 +14,6 @@
         <module>Client</module>
 	    <module>CustomerClient</module>
 	    <module>Server</module>
-        <module>REST-API</module>
     </modules>
 
     <build>

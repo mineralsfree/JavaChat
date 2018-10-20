@@ -12,14 +12,13 @@ import javax.websocket.WebSocketContainer;
 
 @ClientEndpoint
 public class WebSocketUser {
-    private final String uri="ws://localhost:8081/chat";
     private Session session;
     private Client client;
     public WebSocketUser(Client client){
             this.client= client;
         try{
-            WebSocketContainer container=ContainerProvider.
-                    getWebSocketContainer();
+            WebSocketContainer container=ContainerProvider.getWebSocketContainer();
+            String uri = "ws://localhost:8081/chat";
             container.connectToServer(this, new URI(uri));
 
         }catch(Exception ex){

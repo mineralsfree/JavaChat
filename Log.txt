@@ -1,0 +1,4 @@
+time {2018-10-21T00:06:10.144}Agent Vasua registered in System
+time {2018-10-21T00:06:24.447}Customer petya registered in System
+time {2018-10-21T00:06:24.448}Pair [Agent] Vasua and [Customer] petya
+time {2018-10-21T00:06:31.962}[Agent] Vasua 'Hi'.

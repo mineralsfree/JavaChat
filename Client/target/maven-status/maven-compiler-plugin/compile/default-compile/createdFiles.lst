@@ -5,4 +5,5 @@ men\brakh\Chat.class
 men\brakh\Client$ReadMsg.class
 men\brakh\Client$WriteMsg.class
 men\brakh\User.class
+men\brakh\WebSocketUser.class
 men\brakh\MessageType.class

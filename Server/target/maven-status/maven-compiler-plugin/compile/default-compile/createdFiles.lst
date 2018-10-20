@@ -1,7 +1,10 @@
 men\brakh\AgentQueue.class
 men\brakh\handler\Handler.class
 men\brakh\Listener\WebSocketListener.class
+men\brakh\Controller.class
 men\brakh\handler\MessageHandler$1.class
+men\brakh\SpringConfig.class
+men\brakh\StartPoint.class
 men\brakh\Chat.class
 men\brakh\Sender\WebSender.class
 men\brakh\Server.class
@@ -9,9 +12,7 @@ men\brakh\Listener\SocketListener.class
 men\brakh\ServerSomthing.class
 men\brakh\SocketUser.class
 men\brakh\handler\MessageHandler.class
-men\brakh\MyJacksonJsonProvider.class
 men\brakh\Sender\ConsoleSender.class
-men\brakh\ApplicationConfig.class
 men\brakh\Sender\Sender.class
 men\brakh\Logger.class
 men\brakh\CustomerQueue.class
