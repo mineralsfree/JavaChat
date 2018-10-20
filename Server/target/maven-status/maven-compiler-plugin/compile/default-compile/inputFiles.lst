@@ -2,7 +2,16 @@ C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh
 C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh\WebServer.java
 C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh\SocketUser.java
 C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh\Logger.java
-C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh\CustomerQueue.java
 C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh\Chat.java
+C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh\MyJacksonJsonProvider.java
+C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh\Sender\Sender.java
+C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh\Listener\WebSocketListener.java
+C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh\CustomerQueue.java
+C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh\Sender\ConsoleSender.java
+C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh\Listener\SocketListener.java
+C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh\handler\Handler.java
+C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh\ApplicationConfig.java
+C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh\Sender\WebSender.java
 C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh\Server.java
+C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh\handler\MessageHandler.java
 C:\Users\User\Documents\GitHub\Java Chat\JavaChat\Server\src\main\java\men\brakh\ServerSomthing.java

@@ -5,8 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/AgentClient/AgentClient.iml" filepath="$PROJECT_DIR$/AgentClient/AgentClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/Client/Chat.iml" filepath="$PROJECT_DIR$/Client/Chat.iml" />
       <module fileurl="file://$PROJECT_DIR$/CustomerClient/CustomerClient.iml" filepath="$PROJECT_DIR$/CustomerClient/CustomerClient.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../Java Chat.iml" filepath="$PROJECT_DIR$/../Java Chat.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaChat.iml" filepath="$PROJECT_DIR$/.idea/JavaChat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/REST-API/REST-API.iml" filepath="$PROJECT_DIR$/REST-API/REST-API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/REST-API/RESTAPI.iml" filepath="$PROJECT_DIR$/REST-API/RESTAPI.iml" />
       <module fileurl="file://$PROJECT_DIR$/Server/Server.iml" filepath="$PROJECT_DIR$/Server/Server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServerTest/ServerTest.iml" filepath="$PROJECT_DIR$/ServerTest/ServerTest.iml" />
     </modules>

@@ -6,7 +6,6 @@
     <version>1</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>men.brakh</groupId>
   <artifactId>Server</artifactId>
   <version>1</version>
   <build>
@@ -39,6 +38,16 @@
           <target>8</target>
         </configuration>
       </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.2</version>
+        <configuration>
+          <failOnMissingWebXml>true</failOnMissingWebXml>
+          <archive>
+            <addMavenDescriptor>false</addMavenDescriptor>
+          </archive>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
   <dependencies>
@@ -50,9 +59,13 @@
     </dependency>
   </dependencies>
   <properties>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <maven.compiler.source>1.6</maven.compiler.source>
+    <version.mvn.war.plugin>3.2.2</version.mvn.war.plugin>
+    <version.servlet.api>3.1.0</version.servlet.api>
+    <version.jersey>2.15</version.jersey>
+    <failOnMissingWebXml>false</failOnMissingWebXml>
+    <version.mvn.compiler>3.2</version.mvn.compiler>
+    <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
+    <version.jdk>1.8</version.jdk>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.target>1.6</maven.compiler.target>
   </properties>
 </project>

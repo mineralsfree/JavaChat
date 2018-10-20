@@ -1,5 +1,4 @@
 men\brakh\AgentQueue.class
-men\brakh\Server$ServerHandler$1.class
 men\brakh\handler\Handler.class
 men\brakh\Listener\WebSocketListener.class
 men\brakh\handler\MessageHandler$1.class
@@ -10,8 +9,9 @@ men\brakh\Listener\SocketListener.class
 men\brakh\ServerSomthing.class
 men\brakh\SocketUser.class
 men\brakh\handler\MessageHandler.class
+men\brakh\MyJacksonJsonProvider.class
 men\brakh\Sender\ConsoleSender.class
-men\brakh\Server$ServerHandler.class
+men\brakh\ApplicationConfig.class
 men\brakh\Sender\Sender.class
 men\brakh\Logger.class
 men\brakh\CustomerQueue.class

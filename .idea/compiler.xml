@@ -9,6 +9,7 @@
         <module name="AgentClient" />
         <module name="Chat" />
         <module name="CustomerClient" />
+        <module name="REST-API" />
         <module name="Server" />
         <module name="ServerTest" />
       </profile>
@@ -19,6 +20,7 @@
       <module name="CustomerClient" target="1.8" />
       <module name="Java Chat" target="1.8" />
       <module name="JavaChat" target="1.8" />
+      <module name="REST-API" target="8" />
       <module name="Server" target="8" />
       <module name="ServerTest" target="1.8" />
     </bytecodeTargetLevel>
