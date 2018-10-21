@@ -11,18 +11,18 @@ public class MessageHandler {
                 if (msg.getUser().getType() == Type.AGENT) {
                     if (isConnected(msg.getUser(),server)) {
 
-                        server.customerQueue.getByID(msg.getUser().getId()).addMessage(msg);
+                        server.customerQueue.getByID(chatid).addMessage(msg);
 
-                        Sender targetSender = server.customerQueue.getByID(msg.getUser().getId()).getCustomerSS();
+                        Sender targetSender = server.customerQueue.getByID(chatid).getCustomerSS();
                         targetSender.send(msg.getString(targetSender.toString()));
 
                         server.logger.log(msg.getString());
                     }
 
                 } else {
-                    server.customerQueue.getByID(msg.getUser().getId()).addMessage(msg);
+                    server.customerQueue.getByID(chatid).addMessage(msg);
                     if (isConnected(msg.getUser(),server)) {
-                        Sender targetSender = server.customerQueue.getByID(msg.getUser().getId()).getAgentSS();
+                        Sender targetSender = server.customerQueue.getByID(chatid).getAgentSS();
                         targetSender.send(msg.getString(targetSender.toString()));
 
                     } else {
@@ -51,14 +51,14 @@ public class MessageHandler {
                 break;
             case EXIT:
                 if (msg.getUser().getType() == Type.AGENT) {
-                    User usr = server.customerQueue.getByID(msg.getUser().getId()).getCustomer().GetUser();
-                    Sender targetSender =server.customerQueue.getByID(msg.getUser().getId()).getCustomerSS(); // Customer Sender
+                    User usr = server.customerQueue.getByID(chatid).getCustomer().GetUser();
+                    Sender targetSender =server.customerQueue.getByID(chatid).getCustomerSS(); // Customer Sender
                     targetSender.ServerSend(msg.getString());
-                    server.customerQueue.AddUser(usr, server.customerQueue.getByID(msg.getUser().getId()).getCustomer().GetSender());
+                    server.customerQueue.AddUser(usr, server.customerQueue.getByID(chatid).getCustomer().GetSender());
                     server.logger.log("Agent " + msg.getUser().getName() + " closed Application");
                 } else {
-                    SocketUser usr = server.customerQueue.getByID(msg.getUser().getId()).getAgent();
-                    Sender targetSender =  server.customerQueue.getByID(msg.getUser().getId()).getAgentSS();
+                    SocketUser usr = server.customerQueue.getByID(chatid).getAgent();
+                    Sender targetSender =  server.customerQueue.getByID(chatid).getAgentSS();
                     targetSender.ServerSend(msg.getString());
                     server.agentQueue.AddAgent(usr);
                     server.logger.log("Customer " + msg.getUser().getName() + " closed Application");
@@ -66,11 +66,11 @@ public class MessageHandler {
                 server.checkFreeAgents();
                 break;
             case LEAVE:
-                SocketUser usr = server.customerQueue.getByID(msg.getUser().getId()).getAgent();
+                SocketUser usr = server.customerQueue.getByID(chatid).getAgent();
                 server.agentQueue.AddAgent(usr);
-                Sender targetSender =   server.customerQueue.getByID(msg.getUser().getId()).getAgentSS();
+                Sender targetSender =   server.customerQueue.getByID(chatid).getAgentSS();
                 targetSender.ServerSend("User " + msg.getUser().getName() + " Left the chat");
-                server.customerQueue.DeleteChat(server.customerQueue.getByID(msg.getUser().getId()));
+                server.customerQueue.DeleteChat(server.customerQueue.getByID(chatid));
                 server.logger.log("User " + msg.getUser().getName() + " Left the chat");
                 server.checkFreeAgents();
 
@@ -82,10 +82,10 @@ public class MessageHandler {
 
         switch (user.getType()) {
             case AGENT:
-                if (server.customerQueue.getByID(user.getId()) != null) return true;
+                if (server.customerQueue.getbyAgentID(user.getId()) != null) return true;
                 break;
             case CUSTOMER:
-                if (server.customerQueue.getByID(user.getId()).isAgentHere()) return true;
+                if (server.customerQueue.getbyCustomerID(user.getId()).isAgentHere()) return true;
                 break;
 
         }

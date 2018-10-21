@@ -7,18 +7,19 @@ import java.io.IOException;
 
 @Configuration
 public class SpringConfig {
-    private static Server server;
-    @Bean
-    Server server(){
+ private static Server server;
+@Bean
+   public static Server server(){
         try {
-            server = new Server();
+        server = new Server();
+            return server;
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return server;
+        return null;
     }
 
     public static Server getServer() {
         return server;
-    }
+   }
 }

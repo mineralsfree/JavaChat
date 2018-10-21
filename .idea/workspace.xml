@@ -7,7 +7,8 @@
   </component>
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/Message.java" line="26" />
-    <bookmark url="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/Message.java" line="31" />
+    <bookmark url="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/Message.java" line="40" />
+    <bookmark url="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Controller.java" line="31" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1292f79-e375-4e14-bf8b-13239f71e3d4" name="Default Changelist" comment="">
@@ -53,31 +54,40 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/JavaChat$CustomerClient.ic" NAME="CustomerClient Coverage Results" MODIFIED="1540112649985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>men.brakh.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="210" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="973439608">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Server" value="1" />
           <entry key="class" value="9" />
-          <entry key="css" value="1" />
-          <entry key="html" value="16" />
+          <entry key="css" value="2" />
+          <entry key="html" value="18" />
           <entry key="iml" value="3" />
-          <entry key="java" value="239" />
-          <entry key="js" value="21" />
+          <entry key="java" value="286" />
+          <entry key="js" value="24" />
           <entry key="jsp" value="11" />
           <entry key="txt" value="4" />
           <entry key="xml" value="49" />
@@ -86,12 +96,12 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="9" />
-          <entry key="CSS" value="1" />
-          <entry key="HTML" value="16" />
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="18" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="239" />
+          <entry key="JAVA" value="286" />
           <entry key="JSP" value="11" />
-          <entry key="JavaScript" value="21" />
+          <entry key="JavaScript" value="24" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="TML" value="5" />
           <entry key="UML" value="1" />
@@ -102,7 +112,7 @@
         <counts>
           <entry key="css" value="19" />
           <entry key="html" value="540" />
-          <entry key="java" value="5041" />
+          <entry key="java" value="8862" />
           <entry key="js" value="1577" />
           <entry key="xml" value="263" />
         </counts>
@@ -111,7 +121,7 @@
         <counts>
           <entry key="CSS" value="19" />
           <entry key="HTML" value="540" />
-          <entry key="JAVA" value="5041" />
+          <entry key="JAVA" value="8862" />
           <entry key="JavaScript" value="1577" />
           <entry key="XML" value="263" />
         </counts>
@@ -168,29 +178,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/SocketUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/MessageHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="161">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -199,58 +188,53 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/CustomerQueue.java">
+        <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            <state relative-caret-position="93">
+              <caret line="102" column="6" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
               <folding>
-                <element signature="e#240#246#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#418#419#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+                <element signature="e#1641#1642#0" expanded="true" />
+                <element signature="e#1692#1693#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Chat.java">
+        <entry file="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+            <state relative-caret-position="-451">
+              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+              <folding>
+                <element signature="e#742#743#0" expanded="true" />
+                <element signature="e#778#779#0" expanded="true" />
+                <element signature="e#819#820#0" expanded="true" />
+                <element signature="e#847#848#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/WebServer.java">
+        <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/CustomerQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="85">
+              <caret line="44" column="31" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="31" />
+              <folding>
+                <element signature="e#268#274#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/Client.java">
+        <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/MessageHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AgentClient/src/main/java/men/brakh/AgentClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/WebSocketUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="1079">
+              <caret line="87" column="56" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -259,12 +243,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CustomerClient/src/main/java/men/brakh/CustomerClient.java">
+        <entry file="file://$PROJECT_DIR$/Web-chat/lol.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web-chat/Agent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
+            <state relative-caret-position="-587" />
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web-chat/Agent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1029" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web-chat/data.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-111" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web-chat/style.css">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -298,7 +304,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ServerTest/src/main/java/men/brakh/WebListener.java" />
         <option value="$PROJECT_DIR$/ServerTest/src/main/java/men/brakh/WebServer.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Listener/WebSocketListener.java" />
         <option value="$PROJECT_DIR$/Web-chat/index.html" />
@@ -309,10 +314,7 @@
         <option value="$PROJECT_DIR$/Web-chat/style.css" />
         <option value="$PROJECT_DIR$/Web-chat/Agent.html" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/WebServer.java" />
-        <option value="$PROJECT_DIR$/Client/src/main/java/men/brakh/User.java" />
         <option value="$PROJECT_DIR$/Web-chat/data.js" />
-        <option value="$PROJECT_DIR$/Client/src/main/java/men/brakh/Message.java" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Chat.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/SocketUser.java" />
         <option value="$PROJECT_DIR$/Web-chat/Agent.js" />
         <option value="$PROJECT_DIR$/Web-chat/lol.js" />
@@ -338,17 +340,21 @@
         <option value="$PROJECT_DIR$/REST-API/web/WEB-INF/index.html" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/REST-API/src/main/java/men/brakh/CustomerService.java" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/AgentQueue.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/StartPoint.java" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/SpringConfig.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Server.java" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Controller.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Server/pom.xml" />
         <option value="$PROJECT_DIR$/Client/src/main/java/men/brakh/Client.java" />
         <option value="$PROJECT_DIR$/Client/src/main/java/men/brakh/WebSocketUser.java" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/MessageHandler.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Chat.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/SpringConfig.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/AgentQueue.java" />
+        <option value="$PROJECT_DIR$/Client/src/main/java/men/brakh/User.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/APISender.java" />
+        <option value="$PROJECT_DIR$/Client/src/main/java/men/brakh/Message.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/CustomerQueue.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/MessageHandler.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Controller.java" />
       </list>
     </option>
   </component>
@@ -400,6 +406,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -410,25 +417,25 @@
             <path>
               <item name="JavaChat" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaChat" type="462c0819:PsiDirectoryNode" />
-              <item name="CustomerClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaChat" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaChat" type="462c0819:PsiDirectoryNode" />
-              <item name="CustomerClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaChat" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaChat" type="462c0819:PsiDirectoryNode" />
-              <item name="CustomerClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaChat" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaChat" type="462c0819:PsiDirectoryNode" />
-              <item name="CustomerClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -436,7 +443,7 @@
             <path>
               <item name="JavaChat" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaChat" type="462c0819:PsiDirectoryNode" />
-              <item name="CustomerClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -497,12 +504,26 @@
               <item name="brakh" type="462c0819:PsiDirectoryNode" />
               <item name="Listener" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JavaChat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaChat" type="462c0819:PsiDirectoryNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="brakh" type="462c0819:PsiDirectoryNode" />
+              <item name="Sender" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaChat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaChat" type="462c0819:PsiDirectoryNode" />
+              <item name="Web-chat" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -517,14 +538,14 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540069573685" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540149761433" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Metrology-2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5453488" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -550,7 +571,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CustomerClient">
+  <component name="RunManager" selected="Application.AgentClient">
     <configuration name="AgentClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="men.brakh.AgentClient" />
       <module name="AgentClient" />
@@ -611,11 +632,14 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CustomerClient" />
         <item itemvalue="Application.AgentClient" />
+        <item itemvalue="Application.CustomerClient" />
         <item itemvalue="JavaScript Debug.Client.html" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -642,12 +666,13 @@
       <workItem from="1539814418290" duration="11357000" />
       <workItem from="1539884408599" duration="7743000" />
       <workItem from="1540055009310" duration="4347000" />
-      <workItem from="1540063097688" duration="3553000" />
+      <workItem from="1540063097688" duration="10909000" />
+      <workItem from="1540109023232" duration="26225000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121718000" />
+    <option name="totallyTimeSpent" value="155299000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -662,19 +687,19 @@
     <frame x="-8" y="-8" width="1567" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.44006848" visible="true" weight="0.24883875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4387352" visible="true" weight="0.25215662" />
       <window_info id="Structure" order="1" sideWeight="0.50161815" side_tool="true" weight="0.24200426" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.50161815" side_tool="true" weight="0.24200426" />
-      <window_info id="Web" order="7" sideWeight="0.5599315" side_tool="true" weight="0.24200426" />
+      <window_info id="Web" order="7" sideWeight="0.5612648" side_tool="true" weight="0.24883875" />
       <window_info id="JavaEE:App" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4760128" weight="0.39030024" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.47707888" visible="true" weight="0.4157044" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4760128" visible="true" weight="0.3856813" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.47707888" weight="0.4157044" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
@@ -683,9 +708,10 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.52398723" side_tool="true" weight="0.36659437" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.4989339" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286334" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32794458" />
       <window_info anchor="bottom" id="Application Servers" order="13" sideWeight="0.49946696" weight="0.329718" />
-      <window_info anchor="bottom" id="Spring" order="14" />
+      <window_info anchor="bottom" id="Spring" order="14" weight="0.3290993" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3297943" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -700,41 +726,43 @@
       <window_info anchor="right" id="Bean Validation" order="11" />
     </layout>
     <layout-to-restore>
-      <window_info id="JavaEE:App" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.44006848" visible="true" weight="0.24200426" />
-      <window_info id="Structure" order="2" sideWeight="0.50161815" side_tool="true" weight="0.24200426" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Favorites" order="7" sideWeight="0.50161815" side_tool="true" weight="0.24200426" />
-      <window_info id="Web" order="8" sideWeight="0.5599315" side_tool="true" weight="0.24200426" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4387352" visible="true" weight="0.25215662" />
+      <window_info id="Structure" order="1" sideWeight="0.50161815" side_tool="true" weight="0.24200426" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50161815" side_tool="true" weight="0.24200426" />
+      <window_info id="Web" order="7" sideWeight="0.5612648" side_tool="true" weight="0.24883875" />
+      <window_info id="JavaEE:App" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47654584" visible="true" weight="0.36659437" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.47707888" weight="0.4197397" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4760128" weight="0.3856813" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.47707888" visible="true" weight="0.4157044" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5234541" side_tool="true" weight="0.36659437" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3290993" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.52398723" side_tool="true" weight="0.36659437" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.4989339" weight="0.329718" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3286334" />
-      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.329718" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.18710022" />
-      <window_info anchor="right" id="JSF" order="9" />
-      <window_info anchor="right" id="CDI" order="10" />
-      <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="bottom" id="Application Servers" order="13" sideWeight="0.49946696" weight="0.329718" />
+      <window_info anchor="bottom" id="Spring" order="14" weight="0.3290993" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3297943" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.33510286" />
+      <window_info anchor="right" id="JSF" order="10" />
+      <window_info anchor="right" id="CDI" order="11" />
+      <window_info anchor="right" id="Bean Validation" order="12" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -796,6 +824,24 @@
           <properties />
           <option name="timeStamp" value="92" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/main/java/men/brakh/SpringConfig.java</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/APISender.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/MessageHandler.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -810,6 +856,17 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>SpringConfig.getServer()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>men.brakh.SpringConfig</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>private static Server server = SpringConfig.getServer();</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>new Message(this.getUser(), msg, MessageType.OK,getChat()).getJson()</expression-string>
         <language-id>JAVA</language-id>
@@ -828,52 +885,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Server/web/beans.xml" />
-    <entry file="file://$PROJECT_DIR$/ServerTest/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/REST-API/web/WEB-INF/web.xml" />
-    <entry file="file://$PROJECT_DIR$/Server/dependency-reduced-pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-838" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8295">
-          <caret line="2700" selection-start-line="2700" selection-end-line="2700" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.27/jersey-common-2.27.jar!/org/glassfish/jersey/internal/Errors.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0-sources.jar!/javax/servlet/GenericServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="243" selection-start-line="243" selection-end-line="243" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/Server.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/REST-API/RESTAPI.iml" />
-    <entry file="file://$PROJECT_DIR$/REST-API/REST-API.iml" />
-    <entry file="file://$PROJECT_DIR$/REST-API/src/main/java/men/brakh/MyJacksonJsonProvider.java" />
-    <entry file="file://$PROJECT_DIR$/Server/src/web/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/Server/src/web/WEB-INF/web.xml" />
-    <entry file="file://$PROJECT_DIR$/REST-API/web/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/REST-API/web/index.html" />
     <entry file="file://$PROJECT_DIR$/REST-API/pom.xml" />
     <entry file="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.1/javax.ws.rs-api-2.1.jar!/javax/ws/rs/core/Application.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1045,36 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/StartPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/SpringConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/AgentQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/Log.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1092,58 +1073,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/ServerSomthing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Listener/WebSocketListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="114" lean-forward="true" selection-start-line="19" selection-start-column="114" selection-end-line="19" selection-end-column="114" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Listener/SocketListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/SocketUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1161,26 +1094,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/WebSocketUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AgentClient/src/main/java/men/brakh/AgentClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -1195,36 +1108,264 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/WebServer.java">
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="357">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/MessageHandler.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.9.RELEASE/spring-beans-5.0.9.RELEASE-sources.jar!/org/springframework/beans/BeanUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="160">
+          <caret line="168" selection-start-line="168" selection-end-line="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/StartPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/WebSocketUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/ServerSomthing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RequestBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/AgentQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/SocketUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Chat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+        <state relative-caret-position="170">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Listener/WebSocketListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="116" selection-start-line="19" selection-start-column="116" selection-end-line="19" selection-end-column="116" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/SpringConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="217" selection-start-line="217" selection-end-line="217" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/WebSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="41" selection-start-line="41" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/ConsoleSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/APISender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/WebServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/Type.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <folding>
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/Sender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web-chat/Client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web-chat/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web-chat/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-111" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web-chat/lol.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web-chat/Agent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-587" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web-chat/Agent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1029" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/CustomerQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <caret line="44" column="31" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="31" />
           <folding>
-            <element signature="e#240#246#0" expanded="true" />
+            <element signature="e#268#274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-451">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding>
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/MessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1079">
+          <caret line="87" column="56" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="102" column="6" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#1641#1642#0" expanded="true" />
+            <element signature="e#1692#1693#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1295,7 +1436,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: org.springframework.boot:spring-boot-starter-parent:2.0.5.RELEASE</last-edited>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

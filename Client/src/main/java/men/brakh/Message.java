@@ -27,6 +27,15 @@ public class Message {
         this.mt = MessageType.valueOf(mt);
     }
 
+    public void setChatID(int chatID) {
+        this.chatID = chatID;
+    }
+
+    public void setMt(MessageType mt) {
+        this.mt = mt;
+    }
+
+
     public int getChatID() {
         return chatID;
     }

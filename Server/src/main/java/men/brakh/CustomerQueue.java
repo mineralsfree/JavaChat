@@ -3,6 +3,7 @@ package men.brakh;
 import men.brakh.Sender.Sender;
 
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.concurrent.ConcurrentLinkedDeque;
 
 public class CustomerQueue {
@@ -41,20 +42,23 @@ synchronized private int getNextid(){
         }
         return null;
     }
-
-    public Chat getdAgentID(int id){
+    public Chat getbyCustomerID(int id){
         for (Chat chat : this.customerQ){
-            try {
-                if (chat.getAgent().GetUser().getId() == id){
-                    return chat;
-                }
-            } catch (NullPointerException e ){
-
+            if (chat.getAgent().GetUser().getId() == id){
+                return chat;
             }
-
         }
         return null;
     }
+    public Chat getbyAgentID(int id){
+        for (Chat chat : this.customerQ){
+                if (chat.getAgent().GetUser().getId() == id){
+                    return chat;
+                }
+        }
+        return null;
+    }
+
 
     public Chat getByUserName(String name){
         for (Chat chat : this.customerQ){
@@ -67,7 +71,7 @@ synchronized private int getNextid(){
 
     public Chat getByID(int id){
         for (Chat chat : this.customerQ){
-            if ((chat.getCustomer().GetUser().getId()== id) || chat.getAgent().GetUser().getId() == id){
+            if (chat.getId()==id){
                 return chat;
             }
         }
@@ -76,6 +80,25 @@ synchronized private int getNextid(){
     public void DeleteChat(Chat chat){
         customerQ.removeFirstOccurrence(chat);
     }
+
+    public SocketUser[]  getAllAgents(){
+        ArrayList <SocketUser> arrlist = new ArrayList();
+        for (Chat chat:customerQ){
+            arrlist.add(chat.getAgent());
+        }
+        SocketUser arr[] = new SocketUser[customerQ.size()];
+        return arrlist.toArray(arr);
+    }
+    public SocketUser[]  getWaitingCustomers(){
+        ArrayList <SocketUser> arrlist = new ArrayList();
+        for (Chat chat:customerQ){
+            if(!chat.isAgentHere())
+            arrlist.add(chat.getCustomer());
+        }
+        SocketUser arr[] = new SocketUser[arrlist.size()];
+        return arrlist.toArray(arr);
+    }
+
     public Chat GetFreeCustomers(){
         for (Chat chat : customerQ){
             if (chat.getAgent()==null){

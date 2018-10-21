@@ -27,5 +27,13 @@
     <orderEntry type="library" name="Maven: org.glassfish.grizzly:grizzly-http-server:2.3.3" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.grizzly:grizzly-http:2.3.3" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.grizzly:grizzly-rcm:2.3.3" level="project" />
+    <orderEntry type="library" name="Maven: de.plushnikov.lombok-intellij-plugin:lombok-plugin:0.5" level="project" />
+    <orderEntry type="library" name="Maven: de.plushnikov.lombok-intellij-plugin:intellij-facade-api:11.1.3:0.5" level="project" />
+    <orderEntry type="library" name="Maven: de.plushnikov.lombok-intellij-plugin:intellij-facade-factory:11.1.3:0.5" level="project" />
+    <orderEntry type="library" name="Maven: de.plushnikov.lombok-intellij-plugin:intellij-facade-9:0.5" level="project" />
+    <orderEntry type="library" name="Maven: de.plushnikov.lombok-intellij-plugin:intellij-facade-10:0.5" level="project" />
+    <orderEntry type="library" name="Maven: de.plushnikov.lombok-intellij-plugin:intellij-facade-11:0.5" level="project" />
+    <orderEntry type="library" name="Maven: de.plushnikov.lombok-intellij-plugin:processor-api:11.1.3:0.5" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: de.plushnikov.lombok-intellij-plugin:processor-core:11.1.3:0.5" level="project" />
   </component>
 </module>
