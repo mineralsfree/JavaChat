@@ -100,7 +100,7 @@ public class Controller {
                 apiSender.send(msg);
             }
         }
-    } 
+    }
         @PutMapping("/customer/send")
         public void CustomerSend(@RequestParam(value = "msg") String str,@RequestParam(value = "id") int id){
 

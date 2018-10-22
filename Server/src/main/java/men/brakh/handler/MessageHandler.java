@@ -53,13 +53,13 @@ public class MessageHandler {
                 if (msg.getUser().getType() == Type.AGENT) {
                     User usr = server.customerQueue.getByID(chatid).getCustomer().GetUser();
                     Sender targetSender =server.customerQueue.getByID(chatid).getCustomerSS(); // Customer Sender
-                    targetSender.ServerSend(msg.getString());
+                    targetSender.ServerSend(msg.getString(),chatid);
                     server.customerQueue.AddUser(usr, server.customerQueue.getByID(chatid).getCustomer().GetSender());
                     server.logger.log("Agent " + msg.getUser().getName() + " closed Application");
                 } else {
                     SocketUser usr = server.customerQueue.getByID(chatid).getAgent();
                     Sender targetSender =  server.customerQueue.getByID(chatid).getAgentSS();
-                    targetSender.ServerSend(msg.getString());
+                    targetSender.ServerSend(msg.getString(),chatid);
                     server.agentQueue.AddAgent(usr);
                     server.logger.log("Customer " + msg.getUser().getName() + " closed Application");
                 }
@@ -69,7 +69,7 @@ public class MessageHandler {
                 SocketUser usr = server.customerQueue.getByID(chatid).getAgent();
                 server.agentQueue.AddAgent(usr);
                 Sender targetSender =   server.customerQueue.getByID(chatid).getAgentSS();
-                targetSender.ServerSend("User " + msg.getUser().getName() + " Left the chat");
+                targetSender.ServerSend("User " + msg.getUser().getName() + " Left the chat",chatid);
                 server.customerQueue.DeleteChat(server.customerQueue.getByID(chatid));
                 server.logger.log("User " + msg.getUser().getName() + " Left the chat");
                 server.checkFreeAgents();
@@ -77,7 +77,7 @@ public class MessageHandler {
                 break;
         }
 
-    }
+        }
     public boolean isConnected (User user,Server server){ //checks if there is a connection between user and agent
 
         switch (user.getType()) {

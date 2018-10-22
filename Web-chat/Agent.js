@@ -1,19 +1,15 @@
 
 var socket = new WebSocket("ws://localhost:8081/chat");
 var id = 0;
-var currentid =id;
+var currentid =1;
 function autoris() {
     document.getElementById('chatBox').removeAttribute("style");
     let userName = document.getElementById('login').value;
     if(userName.length < 3) {
         return false;
     }
-    let messageElem = document.createElement('div');
-    document.getElementById('subscribe').appendChild(messageElem);
-    currentUser = new User(userName, TYPE,-1);
-    var  msg = new Message(currentUser, "", "REG");
+     currentUser = new User(userName, TYPE, -1);
     // showMessage(new Message(new User("Server", "NONE"), "Hello, " + currentUser.name));
-    sendMessage(msg);
     document.getElementById('subscribe').style.display = 'block';
     document.getElementById('messageHandler').style.display = '-webkit-box';
     document.getElementById('autorisation').style.display = 'none';
@@ -34,22 +30,43 @@ socket.onmessage = function(event) {
         currentUser.setID(msg.message);
         return;
     }
-
-    showMessage(msg);
+    if (msg.mt==="ID"){
+        currentid = msg.chatID;
+        let chatarr= document.getElementsByClassName("chat")
+        for(let i=0;i<chatarr.length;i++){
+        if (chatarr[i].getAttribute("chat") ==="-1"){
+            chatarr[i].setAttribute("chat",currentid)
+        }
+        }
+    }
+    if (msg.mt==="OK") {
+        showMessage(msg);
+    }
 };
 function addtab(){
+
     var msg = new Message(currentUser,"","REG");
     var btn = document.createElement("BUTTON");
 
     btn.appendChild(document.createTextNode('Chat' + ++id));
-    btn.id = ("chat"+ id);
 
+    btn.id = ("chat"+ id);
+    let Messageblock = document.createElement("div");
+    Messageblock.style.display = 'block';
+    Messageblock.setAttribute("chat","-1");
+    Messageblock.className =("chat");
+    Messageblock.id = (id);
+    currentid = id;
+    Messageblock.appendChild(document.createTextNode("Chat" + id ))
+    document.getElementById("subscribe").appendChild(Messageblock);
     btn.onclick = function() {
         for (let i = 1;i<=id;i++){
-            document.getElementById('messages' +i).style.display = "none";
-            document.getElementById((btn.childNodes[0].textContent)).style.display = "block";
+            document.getElementById(""+i).style.display = "none";
+        }
+        currentid = btn.id.charAt(4);
+        document.getElementById(currentid).style.display = "block";
+    };
 
-        } };
 
     document.getElementById('messageHandler').appendChild(btn);
     sendMessage(msg);
@@ -71,9 +88,22 @@ function showMessage(message) {
 
     let messageElem = document.createElement('div');
     messageElem.style.color = color;
-    messageElem.appendChild(document.createTextNode("["+prefix+"] " + message.message));
-    let node = document.getElementById('subscribe').childNodes[currentid]
-    node.appendChild(document.createTextNode("["+prefix+"] " + message.message));
+    let chats = document.getElementsByClassName("chat");
+    if (message.chatID!=="-1"){
+        for (let i=0;i<chats.length;i++){
+            if (parseInt(chats[i].getAttribute("chat"))===message.chatID){
+                let msgdiv = document.createElement("div");
+                msgdiv.appendChild(document.createTextNode("["+prefix+"] " + message.message));
+                chats[i].appendChild(msgdiv);
+            }
+        }
+    }
+}
+function messageHandle(message){
+
+    msg = new Message(currentUser, message,"OK",parseInt(document.getElementById(currentid).getAttribute("chat")));
+    console.log(msg);
+    sendMessage(msg)
 }
 socket.onclose = function(event) {
     if (event.wasClean) {

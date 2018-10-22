@@ -24,9 +24,10 @@ public class Server {
             SocketUser agent = agentQueue.PollAgent();
             Chat CustomerChat = customerQueue.GetFreeCustomers();
             CustomerChat.setAgent(agent);
-            agent.GetSender().ServerRegID(String.valueOf(CustomerChat.getId()));
-            agent.GetSender().ServerSend("U've been connected to "+CustomerChat.getCustomer().GetUser().getName()+" be polite, your chat is logged");
-            CustomerChat.getCustomer().GetSender().ServerSend("U've been connected to "+CustomerChat.getAgent().GetUser().getName()+" be polite, your chat is logged");
+            String chatid = String.valueOf(CustomerChat.getId());
+            agent.GetSender().ServerRegID(chatid);
+            agent.GetSender().ServerSend("U've been connected to "+CustomerChat.getCustomer().GetUser().getName()+" be polite, your chat is logged",Integer.parseInt(chatid));
+            CustomerChat.getCustomer().GetSender().ServerSend("U've been connected to "+CustomerChat.getAgent().GetUser().getName()+" be polite, your chat is logged",Integer.parseInt(chatid));
             logger.log(String.format("Pair [Agent] %s and [Customer] %s", agent.GetUser().getName(), customerChat.getCustomer().GetUser().getName()," Created"));
         }
     }

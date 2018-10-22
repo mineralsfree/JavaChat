@@ -7,7 +7,7 @@ public interface Sender {
     default void send(Message msg) {
         send(msg.getJson());
     }
-    default void ServerSend(String msg){
+    default void ServerSend(String msg,int chatid){
         send(msg);
     }
     default void ServerReg(String msg){

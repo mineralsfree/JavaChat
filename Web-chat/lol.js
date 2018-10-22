@@ -1,7 +1,7 @@
 
 var socket = new WebSocket("ws://localhost:8081/chat");
-
-var chatid =id;
+var currentid = 0;
+var chatid =-1;
 function autoris() {
     document.getElementById('chatBox').removeAttribute("style");
     let userName = document.getElementById('login').value;
@@ -57,7 +57,7 @@ function showMessage(message) {
     messageElem.style.color = color;
   messageElem.appendChild(document.createTextNode("["+prefix+"] " + message.message));
   let node = document.getElementById('subscribe').childNodes[currentid]
-    node.appendChild(document.createTextNode("["+prefix+"] " + message.message));
+    //node.appendChild(document.createTextNode("["+prefix+"] " + message.message));
 }
 socket.onclose = function(event) {
     if (event.wasClean) {

@@ -21,8 +21,8 @@ public class WebSender implements Sender{
         }
 
     }
-    public void ServerSend(String msg){
-        Message message = new Message(new User("server"),msg, MessageType.SERVER);
+    public void ServerSend(String msg,int chatid){
+        Message message = new Message(new User("server"),msg, MessageType.SERVER,chatid);
         try {
             session.getBasicRemote().sendText(message.getJson());
         } catch (IOException e) {

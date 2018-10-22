@@ -1,8 +1,9 @@
-time {2018-10-21T16:16:18.118}Agent Vasya registered in System
-time {2018-10-21T16:16:29.920}Customer Petya registered in System
-time {2018-10-21T16:16:29.922}Pair [Agent] Vasya and [Customer] Petya
-time {2018-10-21T16:16:37.819}[Agent] Vasya 'okay'.
-time {2018-10-21T16:16:52.437}Agent Nikolay registered in System
-time {2018-10-21T16:17:00.414}Customer Nikita registered in System
-time {2018-10-21T16:17:00.415}Pair [Agent] Nikolay and [Customer] Nikita
-time {2018-10-21T16:17:06.177}[Agent] Nikolay 'lol'.
+time {2018-10-22T15:22:18.753}Customer Vasya registered in System
+time {2018-10-22T15:22:26.426}Agent mineralsfree registered in System
+time {2018-10-22T15:22:26.427}Pair [Agent] mineralsfree and [Customer] Vasya
+time {2018-10-22T15:22:40.600}[Agent] mineralsfree 'Hello'.
+time {2018-10-22T15:22:48.572}Agent mineralsfree registered in System
+time {2018-10-22T15:23:02.919}Customer Petya registered in System
+time {2018-10-22T15:23:02.920}Pair [Agent] mineralsfree and [Customer] Petya
+time {2018-10-22T15:23:11.038}[Agent] mineralsfree 'nice'.
+time {2018-10-22T15:23:20.580}[Agent] mineralsfree 'kek'.

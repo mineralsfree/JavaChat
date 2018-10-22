@@ -55,12 +55,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/JavaChat$Unnamed.ic" NAME="Unnamed Coverage Results" MODIFIED="1540208490499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/JavaChat$CustomerClient.ic" NAME="CustomerClient Coverage Results" MODIFIED="1540112649985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>men.brakh.*</FILTER>
     </SUITE>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="210" />
+    <option name="myElementSize" value="218" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="973439608">
@@ -84,10 +85,10 @@
           <entry key="Server" value="1" />
           <entry key="class" value="9" />
           <entry key="css" value="2" />
-          <entry key="html" value="18" />
+          <entry key="html" value="22" />
           <entry key="iml" value="3" />
-          <entry key="java" value="286" />
-          <entry key="js" value="24" />
+          <entry key="java" value="327" />
+          <entry key="js" value="31" />
           <entry key="jsp" value="11" />
           <entry key="txt" value="4" />
           <entry key="xml" value="49" />
@@ -97,11 +98,11 @@
         <counts>
           <entry key="CLASS" value="9" />
           <entry key="CSS" value="2" />
-          <entry key="HTML" value="18" />
+          <entry key="HTML" value="22" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="286" />
+          <entry key="JAVA" value="327" />
           <entry key="JSP" value="11" />
-          <entry key="JavaScript" value="24" />
+          <entry key="JavaScript" value="31" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="TML" value="5" />
           <entry key="UML" value="1" />
@@ -111,18 +112,18 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="19" />
-          <entry key="html" value="540" />
-          <entry key="java" value="8862" />
-          <entry key="js" value="1577" />
+          <entry key="html" value="654" />
+          <entry key="java" value="8953" />
+          <entry key="js" value="2646" />
           <entry key="xml" value="263" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="19" />
-          <entry key="HTML" value="540" />
-          <entry key="JAVA" value="8862" />
-          <entry key="JavaScript" value="1577" />
+          <entry key="HTML" value="654" />
+          <entry key="JAVA" value="8953" />
+          <entry key="JavaScript" value="2646" />
           <entry key="XML" value="263" />
         </counts>
       </usages-collector>
@@ -176,55 +177,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Server.java">
+        <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/APISender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="331">
+              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="102" column="6" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#418#419#0" expanded="true" />
-                <element signature="e#453#454#0" expanded="true" />
-                <element signature="e#1641#1642#0" expanded="true" />
-                <element signature="e#1692#1693#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/Message.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-451">
-              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-              <folding>
-                <element signature="e#742#743#0" expanded="true" />
-                <element signature="e#778#779#0" expanded="true" />
-                <element signature="e#819#820#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/CustomerQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="44" column="31" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="31" />
-              <folding>
-                <element signature="e#268#274#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -233,8 +191,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/MessageHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1079">
-              <caret line="87" column="56" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
+            <state relative-caret-position="190">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -243,34 +201,71 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Web-chat/lol.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/WebServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Web-chat/Agent.html">
+        <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/Handler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-587" />
+            <state relative-caret-position="204">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web-chat/Agent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1029" />
+            <state relative-caret-position="1751">
+              <caret line="103" column="33" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="33" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Web-chat/data.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-111" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Web-chat/style.css">
+        <entry file="file://$PROJECT_DIR$/Web-chat/User.js">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web-chat/Message.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web-chat/lol.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-422">
+              <caret line="33" column="19" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Web-chat/Agent.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web-chat/Client.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="71" selection-start-line="71" selection-end-line="74" selection-end-column="9" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -278,10 +273,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Interface" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -293,6 +288,9 @@
       <find>pom</find>
       <find>war</find>
       <find>service</find>
+      <find>tab</find>
+      <find>messages</find>
+      <find>User</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\User\Documents\GitHub\Java Chat\JavaChat\REST-API</dir>
@@ -304,23 +302,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ServerTest/src/main/java/men/brakh/WebServer.java" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Listener/WebSocketListener.java" />
         <option value="$PROJECT_DIR$/Web-chat/index.html" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/Handler.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Logger.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/ConsoleSender.java" />
-        <option value="$PROJECT_DIR$/Web-chat/Client.html" />
         <option value="$PROJECT_DIR$/Web-chat/style.css" />
-        <option value="$PROJECT_DIR$/Web-chat/Agent.html" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/WebServer.java" />
-        <option value="$PROJECT_DIR$/Web-chat/data.js" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/SocketUser.java" />
-        <option value="$PROJECT_DIR$/Web-chat/Agent.js" />
-        <option value="$PROJECT_DIR$/Web-chat/lol.js" />
         <option value="$PROJECT_DIR$/Client/src/main/java/men/brakh/MessageType.java" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/Sender.java" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/WebSender.java" />
         <option value="$PROJECT_DIR$/AgentClient/src/main/java/men/brakh/AgentClient.java" />
         <option value="$PROJECT_DIR$/CustomerClient/src/main/java/men/brakh/CustomerClient.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/RestAPI/CustomerService.java" />
@@ -341,7 +330,6 @@
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/REST-API/src/main/java/men/brakh/CustomerService.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/StartPoint.java" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Server.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Server/pom.xml" />
         <option value="$PROJECT_DIR$/Client/src/main/java/men/brakh/Client.java" />
@@ -352,9 +340,19 @@
         <option value="$PROJECT_DIR$/Client/src/main/java/men/brakh/User.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/APISender.java" />
         <option value="$PROJECT_DIR$/Client/src/main/java/men/brakh/Message.java" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/CustomerQueue.java" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/MessageHandler.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Controller.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/CustomerQueue.java" />
+        <option value="$PROJECT_DIR$/Web-chat/lol.js" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/WebSender.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/Sender.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/Server.java" />
+        <option value="$PROJECT_DIR$/Web-chat/Agent.js" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/MessageHandler.java" />
+        <option value="$PROJECT_DIR$/Web-chat/Message.js" />
+        <option value="$PROJECT_DIR$/Web-chat/data.js" />
+        <option value="$PROJECT_DIR$/Web-chat/Client.html" />
+        <option value="$PROJECT_DIR$/Web-chat/User.js" />
+        <option value="$PROJECT_DIR$/Web-chat/Agent.html" />
       </list>
     </option>
   </component>
@@ -538,7 +536,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540149761433" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540211041676" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Metrology-2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -571,7 +569,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AgentClient">
+  <component name="RunManager" selected="Application.CustomerClient">
     <configuration name="AgentClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="men.brakh.AgentClient" />
       <module name="AgentClient" />
@@ -632,8 +630,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AgentClient" />
         <item itemvalue="Application.CustomerClient" />
+        <item itemvalue="Application.AgentClient" />
         <item itemvalue="JavaScript Debug.Client.html" />
       </list>
     </recent_temporary>
@@ -667,12 +665,12 @@
       <workItem from="1539884408599" duration="7743000" />
       <workItem from="1540055009310" duration="4347000" />
       <workItem from="1540063097688" duration="10909000" />
-      <workItem from="1540109023232" duration="26225000" />
+      <workItem from="1540109023232" duration="40945000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155299000" />
+    <option name="totallyTimeSpent" value="170019000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -685,27 +683,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1567" height="1000" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4387352" visible="true" weight="0.25215662" />
-      <window_info id="Structure" order="1" sideWeight="0.50161815" side_tool="true" weight="0.24200426" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.50161815" side_tool="true" weight="0.24200426" />
-      <window_info id="Web" order="7" sideWeight="0.5612648" side_tool="true" weight="0.24883875" />
-      <window_info id="JavaEE:App" order="8" side_tool="true" />
+      <window_info id="Structure" order="0" sideWeight="0.50161815" side_tool="true" weight="0.24200426" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.50161815" side_tool="true" weight="0.24200426" />
+      <window_info id="Web" order="6" sideWeight="0.5612648" side_tool="true" weight="0.24883875" />
+      <window_info id="JavaEE:App" order="7" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="8" sideWeight="0.4387352" visible="true" weight="0.25215662" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4760128" visible="true" weight="0.3856813" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.47707888" weight="0.4157044" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290993" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.46516258" visible="true" weight="0.3856813" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.459854" weight="0.41108546" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4996682" weight="0.3290993" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3290993" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.52398723" side_tool="true" weight="0.36659437" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.540146" side_tool="true" weight="0.4157044" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.4989339" weight="0.329718" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32794458" />
@@ -737,17 +734,17 @@
       <window_info id="JavaEE:App" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4760128" weight="0.3856813" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.47707888" visible="true" weight="0.4157044" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4605176" weight="0.3856813" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4605176" visible="true" weight="0.4157044" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4996682" weight="0.3290993" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3290993" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.52398723" side_tool="true" weight="0.36659437" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5394824" side_tool="true" weight="0.4157044" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.4989339" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286334" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32794458" />
       <window_info anchor="bottom" id="Application Servers" order="13" sideWeight="0.49946696" weight="0.329718" />
       <window_info anchor="bottom" id="Spring" order="14" weight="0.3290993" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3297943" />
@@ -795,36 +792,6 @@
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Server.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Server/src/main/java/men/brakh/WebServer.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/AgentClient/src/main/java/men/brakh/AgentClient.java</url>
-          <line>15</line>
-          <properties />
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/CustomerClient/src/main/java/men/brakh/CustomerClient.java</url>
-          <line>17</line>
-          <properties />
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/MessageHandler.java</url>
-          <line>82</line>
-          <properties />
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/men/brakh/SpringConfig.java</url>
           <line>12</line>
           <properties />
@@ -838,9 +805,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/MessageHandler.java</url>
-          <line>40</line>
+          <line>24</line>
           <properties />
-          <option name="timeStamp" value="102" />
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/MessageHandler.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/MessageHandler.java</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="106" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -848,6 +827,12 @@
       </breakpoints-dialog>
     </breakpoint-manager>
     <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="server.customerQueue.getbyCustomerID(user.getId())" language="JAVA" />
+        <watch expression="user.getId()" language="JAVA" />
+        <watch expression="server.customerQueue.getbyCustomerID(2)" language="JAVA" />
+        <watch expression="(msg.getString(targetSender.toString()))" language="JAVA" />
+      </configuration>
       <configuration name="Application">
         <watch expression="senderStr.startsWith(&quot;men.brakh.Sender.WebSender&quot;)" language="JAVA" />
         <watch expression="new Message(this.getUser(), msg, MessageType.OK,getChat()).getJson()" language="JAVA" />
@@ -856,6 +841,26 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>(msg.getString(targetSender.toString()))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>server.customerQueue.getbyCustomerID(2)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>user.getId()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>server.customerQueue.getbyCustomerID(user.getId())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>SpringConfig.getServer()</expression-string>
         <language-id>JAVA</language-id>
@@ -885,163 +890,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/REST-API/pom.xml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.1/javax.ws.rs-api-2.1.jar!/javax/ws/rs/core/Application.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.1/javax.ws.rs-api-2.1.jar!/javax/ws/rs/ApplicationPath.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.27/jersey-server-2.27.jar!/org/glassfish/jersey/server/ResourceConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="647" selection-start-line="647" selection-end-line="647" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/REST-API/src/main/java/men/brakh/ApplicationConfig.java" />
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/ApplicationConfig.java" />
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/MyJacksonJsonProvider.java" />
-    <entry file="file://$PROJECT_DIR$/REST-API/src/main/java/men/brakh/CustomerService.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.27/jersey-server-2.27.jar!/org/glassfish/jersey/server/wadl/internal/WadlResource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://SPRING/mappedClass=men.brakh.Server">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>SPRING</ID>
-          <OriginalElement>mappedClass=men.brakh.Server</OriginalElement>
-          <nodes>
-            <node x="" y="">module=Server;bean_class=men.brakh.Server;bean_name=server</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration;bean_name=stringHttpMessageConverterConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.http.converter.StringHttpMessageConverter;bean_name=stringHttpMessageConverter</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.HttpEncodingProperties;bean_name=spring.http.encoding.CONFIGURATION_PROPERTIES</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.context.properties.EnableConfigurationPropertiesImportSelector;bean_name=enableConfigurationPropertiesImportSelector</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration;bean_name=serverPropertiesAutoConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.ServerProperties;bean_name=serverProperties</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration.DuplicateServerPropertiesDetector;bean_name=duplicateServerPropertiesDetector</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;bean_name=requestMappingHandlerAdapter</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;bean_name=requestMappingHandlerMapping</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.accept.ContentNegotiationManager;bean_name=mvcContentNegotiationManager</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.HandlerMapping;bean_name=viewControllerHandlerMapping</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping;bean_name=beanNameHandlerMapping</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.HandlerMapping;bean_name=resourceHandlerMapping</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.resource.ResourceUrlProvider;bean_name=mvcResourceUrlProvider</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.HandlerMapping;bean_name=defaultServletHandlerMapping</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.format.support.FormattingConversionService;bean_name=mvcConversionService</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.validation.Validator;bean_name=mvcValidator</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.util.PathMatcher;bean_name=mvcPathMatcher</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.util.UrlPathHelper;bean_name=mvcUrlPathHelper</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.method.support.CompositeUriComponentsContributor;bean_name=mvcUriComponentsContributor</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter;bean_name=httpRequestHandlerAdapter</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter;bean_name=simpleControllerHandlerAdapter</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.HandlerExceptionResolver;bean_name=handlerExceptionResolver</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.ViewResolver;bean_name=mvcViewResolver</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.context.WebApplicationContext;bean_name=webApplicationContext</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.WebMvcProperties;bean_name=spring.mvc.CONFIGURATION_PROPERTIES</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration;bean_name=messageSourceAutoConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.context.MessageSource;bean_name=messageSource</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration;bean_name=dispatcherServletAutoConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration;bean_name=gsonAutoConfiguration</node>
-            <node x="" y="">module=Server;bean_class=com.google.gson.Gson;bean_name=gson</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration;bean_name=webMvcAutoConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.context.web.OrderedHiddenHttpMethodFilter;bean_name=hiddenHttpMethodFilter</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.context.web.OrderedHttpPutFormContentFilter;bean_name=httpPutFormContentFilter</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.JacksonObjectMapperBuilderConfiguration;bean_name=jacksonObjectMapperBuilderConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;bean_name=jacksonObjectMapperBuilder</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonProperties;bean_name=spring.jackson.CONFIGURATION_PROPERTIES</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration;bean_name=webSocketAutoConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration;bean_name=httpMessageConvertersAutoConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration;bean_name=jacksonHttpMessageConvertersConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.GsonHttpMessageConvertersConfiguration;bean_name=gsonHttpMessageConvertersConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.HttpMessageConverters;bean_name=messageConverters</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter.FaviconConfiguration;bean_name=faviconConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.handler.SimpleUrlHandlerMapping;bean_name=faviconHandlerMapping</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.resource.ResourceHttpRequestHandler;bean_name=faviconRequestHandler</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.ResourceProperties;bean_name=spring.resources.CONFIGURATION_PROPERTIES</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.ParameterNamesModuleConfiguration;bean_name=parameterNamesModuleConfiguration</node>
-            <node x="" y="">module=Server;bean_class=com.fasterxml.jackson.module.paramnames.ParameterNamesModule;bean_name=parameterNamesModule</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration;bean_name=httpEncodingAutoConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.filter.CharacterEncodingFilter;bean_name=characterEncodingFilter</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter;bean_name=webMvcAutoConfigurationAdapter</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.view.InternalResourceViewResolver;bean_name=defaultViewResolver</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.filter.RequestContextFilter;bean_name=requestContextFilter</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.view.BeanNameViewResolver;bean_name=beanNameViewResolver</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.view.ContentNegotiatingViewResolver;bean_name=viewResolver</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.LocaleResolver;bean_name=localeResolver</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.format.Formatter;bean_name=dateFormatter</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration.TomcatWebSocketConfiguration;bean_name=tomcatWebSocketConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.websocket.TomcatWebSocketContainerCustomizer;bean_name=websocketContainerCustomizer</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration;bean_name=whitelabelErrorViewConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.View;bean_name=error</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration;bean_name=jmxAutoConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.jmx.export.annotation.AnnotationMBeanExporter;bean_name=mbeanExporter</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.jmx.ParentAwareNamingStrategy;bean_name=objectNamingStrategy</node>
-            <node x="" y="">module=Server;bean_class=javax.management.MBeanServer;bean_name=mbeanServer</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.JacksonObjectMapperConfiguration;bean_name=jacksonObjectMapperConfiguration</node>
-            <node x="" y="">module=Server;bean_class=com.fasterxml.jackson.databind.ObjectMapper;bean_name=jacksonObjectMapper</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration;bean_name=propertyPlaceholderAutoConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.context.support.PropertySourcesPlaceholderConfigurer;bean_name=propertySourcesPlaceholderConfigurer</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration.DispatcherServletConfiguration;bean_name=dispatcherServletConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.servlet.DispatcherServlet;bean_name=dispatcherServlet</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.context.embedded.ServletRegistrationBean;bean_name=dispatcherServletRegistration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.multipart.MultipartResolver;bean_name=multipartResolver</node>
-            <node x="" y="">module=Server;bean_class=javax.servlet.MultipartConfigElement;bean_name=multipartConfigElement</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration;bean_name=jacksonAutoConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration;bean_name=cacheAutoConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration.CacheConfigurationImportSelector;bean_name=cacheConfigurationImportSelector</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration.CacheManagerValidatorPostProcessor;bean_name=cacheAutoConfigurationValidatorPostProcessor</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration.CacheManagerValidator;bean_name=cacheAutoConfigurationValidator</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.cache.CacheProperties;bean_name=spring.cache.CONFIGURATION_PROPERTIES</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration;bean_name=jtaAutoConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.transaction.jta.JtaProperties;bean_name=spring.jta.CONFIGURATION_PROPERTIES</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration;bean_name=multipartAutoConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.web.multipart.support.StandardServletMultipartResolver;bean_name=multipartResolver</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.MultipartProperties;bean_name=multipart.CONFIGURATION_PROPERTIES</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration;bean_name=embeddedServletContainerAutoConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration.EmbeddedServletContainerCustomizerBeanPostProcessorRegistrar;bean_name=embeddedServletContainerCustomizerBeanPostProcessorRegistrar</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration;bean_name=errorMvcAutoConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.DefaultErrorAttributes;bean_name=errorAttributes</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.BasicErrorController;bean_name=basicErrorController</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration.ErrorPageCustomizer;bean_name=errorPageCustomizer</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration.PreserveErrorControllerTargetClassPostProcessor;bean_name=preserveErrorControllerTargetClassPostProcessor</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration.EmbeddedTomcat;bean_name=embeddedTomcat</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory;bean_name=tomcatEmbeddedServletContainerFactory</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration;bean_name=configurationPropertiesAutoConfiguration</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.core.env.Environment;bean_name=environment</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.core.env.PropertyResolver;bean_name=propertyResolver</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.core.convert.ConversionService;bean_name=conversionService</node>
-            <node x="" y="">module=Server;bean_class=javax.servlet.ServletConfig;bean_name=servletConfig</node>
-            <node x="" y="">module=Server;bean_class=javax.servlet.http.HttpSession;bean_name=httpSession</node>
-            <node x="" y="">module=Server;bean_class=javax.servlet.http.HttpServletRequest;bean_name=httpServletRequest</node>
-            <node x="" y="">module=Server;bean_class=javax.servlet.ServletContext;bean_name=servletContext</node>
-            <node x="" y="">module=Server;bean_class=org.springframework.boot.ApplicationArguments;bean_name=springApplicationArguments</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.2554054054054054" x="1115.0" y="1100.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Local context</Category>
-            <Category>Properties</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.3.2.RELEASE/spring-boot-autoconfigure-1.3.2.RELEASE.jar!/org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
@@ -1080,34 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/tyrus/tyrus-core/1.1/tyrus-core-1.1-sources.jar!/org/glassfish/tyrus/core/AnnotatedEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="430" selection-start-line="430" selection-end-line="430" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AgentClient/src/main/java/men/brakh/AgentClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CustomerClient/src/main/java/men/brakh/CustomerClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1133,16 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/WebSocketUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/ServerSomthing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
@@ -1154,13 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1225,36 +1028,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/WebSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="41" selection-start-line="41" selection-end-line="51" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/ConsoleSender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/APISender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/WebServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
@@ -1276,62 +1053,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/Sender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web-chat/Client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web-chat/style.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web-chat/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-111" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web-chat/lol.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web-chat/Agent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-587" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web-chat/Agent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1029" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/CustomerQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="44" column="31" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="31" />
-          <folding>
-            <element signature="e#268#274#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/Message.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1346,20 +1069,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/MessageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1079">
-          <caret line="87" column="56" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="102" column="6" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
+        <state relative-caret-position="427">
+          <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#418#419#0" expanded="true" />
@@ -1367,6 +1080,222 @@
             <element signature="e#1641#1642#0" expanded="true" />
             <element signature="e#1692#1693#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/CustomerQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#268#274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AgentClient/src/main/java/men/brakh/AgentClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/WebSocketUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomerClient/src/main/java/men/brakh/CustomerClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/main/java/men/brakh/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/grizzly/grizzly-framework/2.3.3/grizzly-framework-2.3.3-sources.jar!/org/glassfish/grizzly/threadpool/AbstractThreadPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="564" selection-start-line="564" selection-end-line="564" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/grizzly/grizzly-framework/2.3.3/grizzly-framework-2.3.3-sources.jar!/org/glassfish/grizzly/nio/SelectorRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="377" selection-start-line="377" selection-end-line="377" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/grizzly/grizzly-framework/2.3.3/grizzly-framework-2.3.3-sources.jar!/org/glassfish/grizzly/strategies/AbstractIOStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="744" selection-start-line="744" selection-end-line="744" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/tyrus/tyrus-websocket-core/1.1/tyrus-websocket-core-1.1-sources.jar!/org/glassfish/tyrus/websockets/DataFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+          <folding>
+            <element signature="e#3448#3449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/tyrus/tyrus-websocket-core/1.1/tyrus-websocket-core-1.1-sources.jar!/org/glassfish/tyrus/websockets/DefaultWebSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="154" selection-start-line="154" selection-end-line="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/tyrus/tyrus-core/1.1/tyrus-core-1.1-sources.jar!/org/glassfish/tyrus/core/SessionImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="400" selection-start-line="400" selection-end-line="400" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/tyrus/tyrus-core/1.1/tyrus-core-1.1-sources.jar!/org/glassfish/tyrus/core/EndpointWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="512" selection-start-line="512" selection-end-line="512" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/tyrus/tyrus-core/1.1/tyrus-core-1.1-sources.jar!/org/glassfish/tyrus/core/TyrusEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="172" selection-start-line="172" selection-end-line="172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/WebSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="37" column="53" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/Sender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+          <folding>
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/Sender/APISender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/tyrus/tyrus-core/1.1/tyrus-core-1.1-sources.jar!/org/glassfish/tyrus/core/AnnotatedEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="430" selection-start-line="430" selection-end-line="430" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/WebServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/men/brakh/handler/MessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web-chat/Client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="71" selection-start-line="71" selection-end-line="74" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web-chat/Message.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web-chat/lol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-422">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web-chat/Agent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="103" column="33" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web-chat/User.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web-chat/Agent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
         </state>
       </provider>
     </entry>

@@ -44,7 +44,7 @@ synchronized private int getNextid(){
     }
     public Chat getbyCustomerID(int id){
         for (Chat chat : this.customerQ){
-            if (chat.getAgent().GetUser().getId() == id){
+            if (chat.getCustomer().GetUser().getId() == id){
                 return chat;
             }
         }
