@@ -1,6 +1,8 @@
 package men.brakh;
 
 
+import javafx.scene.control.TextArea;
+
 import java.io.*;
 import java.net.Socket;
 import java.util.Scanner;
@@ -15,32 +17,30 @@ public abstract class Client{
     private WriteMsg writeThread;
     private int chat = -1;
 
-    public Client(){
 
-    }
 
-    public Client(String ip,int port){
+    public Client(TextArea messageBox){
   //      try {
 //           Socket clientSocket = new Socket(ip, port);
-            webSocketUser = new WebSocketUser(this);
+            webSocketUser = new WebSocketUser(this,messageBox);
 
 
-        inputUser = new BufferedReader(new InputStreamReader(System.in));
+    //    inputUser = new BufferedReader(new InputStreamReader(System.in));
         // читать соообщения с сервера
     //    in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         // писать туда же
         //out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
-            readThread= new ReadMsg();
-            writeThread = new WriteMsg();
+           // readThread= new ReadMsg();
+         //   writeThread = new WriteMsg();
 //        } catch (IOException e) {
  //           e.printStackTrace();
  //       }
-        try {
+    /*    try {
             readThread.join();
           //  writeThread.join();
         } catch (InterruptedException e){
             e.printStackTrace();
-        }
+        }*/
     }
     public User getUser(){
         return user;
@@ -86,20 +86,9 @@ public abstract class Client{
 
             while (true) {
                 String answer;
-
                 Scanner scan = new Scanner(System.in);
                 answer = scan.nextLine();
-           //     try {
-
-                    StringHandler(answer);
-
-//                    out.flush();
-                    //SendServer(userWord);
-       //         } catch (IOException e) {
-       //             e.printStackTrace();
-        //        }
-
-                // чистим
+  //                  StringHandler(answer);
 
             }
         }

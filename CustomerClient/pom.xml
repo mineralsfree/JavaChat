@@ -8,7 +8,6 @@
         <artifactId>JavaChat</artifactId>
         <version>1</version>
     </parent>
-    <groupId>men.brakh</groupId>
     <artifactId>CustomerClient</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -17,6 +16,11 @@
         <maven.compiler.target>1.6</maven.compiler.target>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>com.zenjava</groupId>
+            <artifactId>javafx-maven-plugin</artifactId>
+            <version>8.8.3</version>
+        </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
@@ -33,6 +37,14 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>com.zenjava</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>8.8.3</version>
+                <configuration>
+                    <mainClass>men.brakh.CustomerClient</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>3.1.1</version>
@@ -46,7 +58,7 @@
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <manifestEntries>
-                                        <Main-Class>men.brakh.AgentClient</Main-Class>
+                                        <Main-Class>men.brakh.CustomerWindow</Main-Class>
                                     </manifestEntries>
                                 </transformer>
                             </transformers>

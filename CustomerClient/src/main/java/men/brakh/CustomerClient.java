@@ -1,17 +1,18 @@
 package men.brakh;
 
+import javafx.scene.control.TextArea;
+
 import java.io.IOException;
 
 public class CustomerClient extends Client {
-    final static String ip = "localhost";
+    public final static String ip = "localhost";
     public static int port = 1488;
     public String username;
     public boolean isRegistred = false;
     public boolean Stopped = false;
     public boolean isSent = false;
-    CustomerClient(String ip,int port) throws IOException {
-
-        super(ip,port);
+    public CustomerClient(TextArea messageBox){
+        super( messageBox);
     }
 
     public void StringHandler(String msg){
@@ -62,18 +63,16 @@ public class CustomerClient extends Client {
         }
 
     }
-    public void registerUser(String Username){
+    private void registerUser(String Username){
         setUser(new Customer(Username));
         isRegistred = true;
     }
 
     public static void main(String[] args){
 
-        try {
-            new CustomerClient(ip,port);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
+         //   new CustomerClient();
+
 
     }
 }

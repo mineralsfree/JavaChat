@@ -6,11 +6,18 @@
     <version>1</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>men.brakh</groupId>
   <artifactId>CustomerClient</artifactId>
   <version>1.0-SNAPSHOT</version>
   <build>
     <plugins>
+      <plugin>
+        <groupId>com.zenjava</groupId>
+        <artifactId>javafx-maven-plugin</artifactId>
+        <version>8.8.3</version>
+        <configuration>
+          <mainClass>men.brakh.CustomerClient</mainClass>
+        </configuration>
+      </plugin>
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>
         <version>3.1.1</version>
@@ -24,7 +31,7 @@
               <transformers>
                 <transformer>
                   <manifestEntries>
-                    <Main-Class>men.brakh.AgentClient</Main-Class>
+                    <Main-Class>men.brakh.CustomerWindow</Main-Class>
                   </manifestEntries>
                 </transformer>
               </transformers>

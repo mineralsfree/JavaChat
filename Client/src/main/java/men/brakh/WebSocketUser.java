@@ -1,5 +1,11 @@
 package men.brakh;
 
+
+import javafx.scene.control.TextArea;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+
+import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import javax.websocket.ClientEndpoint;
@@ -14,8 +20,14 @@ import javax.websocket.WebSocketContainer;
 public class WebSocketUser {
     private Session session;
     private Client client;
-    public WebSocketUser(Client client){
+    private TextArea messageBox;
+
+
+    public WebSocketUser(Client client, TextArea  messageBox ){
             this.client= client;
+            this.messageBox = messageBox;
+
+
         try{
             WebSocketContainer container=ContainerProvider.getWebSocketContainer();
             String uri = "ws://localhost:8081/chat";
@@ -46,6 +58,8 @@ public class WebSocketUser {
            client.setChat(msg.getChatID());
             return;
         }
+
+            messageBox.appendText(str + "\n");
 
         System.out.println(str);
     }

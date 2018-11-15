@@ -1,14 +1,16 @@
 package men.brakh;
 
 
+import javafx.scene.control.TextArea;
+
 import java.io.IOException;
 
 public class AgentClient extends Client{
     final static String ip = "localhost";
     public static int port = 1488;
     public boolean isRegistred = false;
-    AgentClient(String ip,int port) throws IOException {
-            super(ip,port);
+    public   AgentClient(TextArea messageBox) {
+            super(messageBox);
     }
 
     public void StringHandler(String msg){
@@ -40,13 +42,4 @@ public class AgentClient extends Client{
 
     }
 
-    public static void main(String[] args){
-
-        try {
-            new AgentClient(ip,port);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
 }

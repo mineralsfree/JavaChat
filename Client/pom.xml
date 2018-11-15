@@ -67,6 +67,7 @@
             <artifactId>lombok-plugin</artifactId>
             <version>0.5</version>
         </dependency>
+
     </dependencies>
     <build>
         <plugins>

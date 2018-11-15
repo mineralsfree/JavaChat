@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="men.brakh.Controllers.MainController">
+   <children>
+      <TextField fx:id="welcomeInput" layoutX="226.0" layoutY="188.0" />
+      <Text id="fancytext" fx:id="welcomeText" layoutX="133.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" style=": ;" text="Welcome to most unpopular java chat in the world  feel free to enter your name" wrappingWidth="334.638671875" />
+      <TextArea fx:id="messageBox" editable="false" layoutX="23.0" layoutY="19.0" prefHeight="299.0" prefWidth="445.0" />
+      <TextField fx:id="messageInput" layoutX="23.0" layoutY="330.0" prefHeight="50.0" prefWidth="445.0" />
+      <Button fx:id="sendButton" layoutX="489.0" layoutY="330.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="97.0" text="Send" />
+      <Pane layoutX="54.0" layoutY="44.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

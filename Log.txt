@@ -1,9 +1,8 @@
-time {2018-10-22T15:22:18.753}Customer Vasya registered in System
-time {2018-10-22T15:22:26.426}Agent mineralsfree registered in System
-time {2018-10-22T15:22:26.427}Pair [Agent] mineralsfree and [Customer] Vasya
-time {2018-10-22T15:22:40.600}[Agent] mineralsfree 'Hello'.
-time {2018-10-22T15:22:48.572}Agent mineralsfree registered in System
-time {2018-10-22T15:23:02.919}Customer Petya registered in System
-time {2018-10-22T15:23:02.920}Pair [Agent] mineralsfree and [Customer] Petya
-time {2018-10-22T15:23:11.038}[Agent] mineralsfree 'nice'.
-time {2018-10-22T15:23:20.580}[Agent] mineralsfree 'kek'.
+time {2018-11-16T00:15:45.588}Agent Nikita registered in System
+time {2018-11-16T00:16:04.827}Customer Vasya registered in System
+time {2018-11-16T00:16:04.829}Pair [Agent] Nikita and [Customer] Vasya
+time {2018-11-16T00:17:16.407}[Agent] Nikita 'hiasdfds'.
+time {2018-11-16T00:17:20.389}[Agent] Nikita 'lol\'.
+time {2018-11-16T00:17:22.509}[Agent] Nikita 'sdjasdf'.
+time {2018-11-16T00:17:24.795}[Agent] Nikita 'hellko'.
+time {2018-11-16T00:18:04.481}[Agent] Nikita 'I'm okay about Nudity'.
