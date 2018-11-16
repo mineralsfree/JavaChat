@@ -1,8 +1,6 @@
-time {2018-11-16T00:15:45.588}Agent Nikita registered in System
-time {2018-11-16T00:16:04.827}Customer Vasya registered in System
-time {2018-11-16T00:16:04.829}Pair [Agent] Nikita and [Customer] Vasya
-time {2018-11-16T00:17:16.407}[Agent] Nikita 'hiasdfds'.
-time {2018-11-16T00:17:20.389}[Agent] Nikita 'lol\'.
-time {2018-11-16T00:17:22.509}[Agent] Nikita 'sdjasdf'.
-time {2018-11-16T00:17:24.795}[Agent] Nikita 'hellko'.
-time {2018-11-16T00:18:04.481}[Agent] Nikita 'I'm okay about Nudity'.
+time {2018-11-17T00:12:29.674}Agent mineralsfree registered in System
+time {2018-11-17T00:12:35.232}Customer MineralsFre registered in System
+time {2018-11-17T00:12:35.233}Pair [Agent] mineralsfree and [Customer] MineralsFre
+time {2018-11-17T00:12:41.125}[Agent] mineralsfree 'Hello'.
+time {2018-11-17T00:12:54.218}[Agent] mineralsfree 'Sorry, cant help you'.
+time {2018-11-17T00:12:57.690}Agent mineralsfree closed Application

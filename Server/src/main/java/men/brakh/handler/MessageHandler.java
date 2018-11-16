@@ -10,15 +10,12 @@ public class MessageHandler {
             case OK:
                 if (msg.getUser().getType() == Type.AGENT) {
                     if (isConnected(msg.getUser(),server)) {
-
                         server.customerQueue.getByID(chatid).addMessage(msg);
-
                         Sender targetSender = server.customerQueue.getByID(chatid).getCustomerSS();
                         targetSender.send(msg.getString(targetSender.toString()));
 
                         server.logger.log(msg.getString());
                     }
-
                 } else {
                     server.customerQueue.getByID(chatid).addMessage(msg);
                     if (isConnected(msg.getUser(),server)) {
@@ -37,7 +34,6 @@ public class MessageHandler {
                 SocketUser socketUser = new SocketUser(user, sender);
                 if (msg.getUser().getType() == Type.AGENT) {
                     server.agentQueue.AddAgent(socketUser);
-
                     sender.ServerReg(String.valueOf(id));
                     server.logger.log("Agent " + user.getName() + " registered in System");
                 } else {
