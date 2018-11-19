@@ -7,6 +7,14 @@
   <build>
     <plugins>
       <plugin>
+        <groupId>com.zenjava</groupId>
+        <artifactId>javafx-maven-plugin</artifactId>
+        <version>8.8.3</version>
+        <configuration>
+          <mainClass>men.brakh.AgentWindow</mainClass>
+        </configuration>
+      </plugin>
+      <plugin>
         <artifactId>maven-shade-plugin</artifactId>
         <version>3.1.1</version>
         <executions>
@@ -19,13 +27,20 @@
               <transformers>
                 <transformer>
                   <manifestEntries>
-                    <Main-Class>men.brakh.AgentClient</Main-Class>
+                    <Main-Class>men.brakh.AgentWindow</Main-Class>
                   </manifestEntries>
                 </transformer>
               </transformers>
             </configuration>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>8</source>
+          <target>8</target>
+        </configuration>
       </plugin>
     </plugins>
   </build>

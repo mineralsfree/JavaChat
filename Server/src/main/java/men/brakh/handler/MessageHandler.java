@@ -6,6 +6,7 @@ import men.brakh.Sender.Sender;
 public class MessageHandler {
     public  MessageHandler(Message msg, Server server, Sender sender) {
         int chatid = msg.getChatID();
+        server.logger.log(msg.getJson());
         switch (msg.getMt()) {
             case OK:
                 if (msg.getUser().getType() == Type.AGENT) {

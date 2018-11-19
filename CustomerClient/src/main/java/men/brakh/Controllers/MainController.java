@@ -33,8 +33,12 @@ public class MainController implements Initializable {
     public Button sendButton;
     @FXML
     public TextField welcomeInput;
+    @FXML
+    public Button exitButton;
 
-
+    public static void sendExit(){
+        customerClient.StringHandler("/exit");
+    }
 
 
 
@@ -49,6 +53,7 @@ public class MainController implements Initializable {
                 messageBox.visibleProperty().setValue(true);
                 sendButton.visibleProperty().setValue(true);
                 messageInput.visibleProperty().setValue(true);
+                exitButton.visibleProperty().setValue(true);
             }
         });
     }
@@ -65,6 +70,7 @@ public class MainController implements Initializable {
     private void setSendClickListener(Button button){
         button.setOnMouseClicked(e ->{
             MainController.customerClient.StringHandler(messageInput.getText());
+            messageBox.appendText("[YOU]" + messageInput.getText()+"\n");
             messageInput.setText("");
         });
     }
@@ -72,8 +78,11 @@ public class MainController implements Initializable {
         msg = (message + "\n");
 
  }
-
-
+private void setExitClickListener(Button button){
+   button.setOnMouseClicked(e ->{
+       MainController.customerClient.StringHandler("/exit");
+   });
+    }
 
 
 
@@ -87,12 +96,15 @@ public class MainController implements Initializable {
        messageBox.visibleProperty().setValue(false);
         messageInput.visibleProperty().setValue(false);
         sendButton.visibleProperty().setValue(false);
+        exitButton.visibleProperty().setValue(false);
         t.setText("This is a text sample");
         t.setFont(Font.font("Verdana", 20));
         Scene scene = new Scene(new Group(), 500, 400);
         scene.getStylesheets().add("/fxml/WelcomePage.css");
         setRegEnterListener(welcomeInput);
         setSendEnterListener(messageInput);
+        setExitClickListener(exitButton);
+        setSendClickListener(sendButton);
         messageBox.textProperty().addListener((observable, oldValue, newValue) -> {
             String newStr = newValue.substring(oldValue.length());
             if (!newStr.startsWith("[YOU]")){

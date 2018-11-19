@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 @ServerEndpoint(value = "/chat")
 public class    WebServer {
     public static Server server;
-    public static Map<String, Integer> hashMap = new HashMap<String, Integer>();
+    private static Map<String, Integer> hashMap = new HashMap<String, Integer>();
 
     private Logger logger = Logger.getLogger(this.getClass().getName());
     @OnOpen

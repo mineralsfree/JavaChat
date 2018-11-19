@@ -1,6 +1,27 @@
-time {2018-11-17T00:12:29.674}Agent mineralsfree registered in System
-time {2018-11-17T00:12:35.232}Customer MineralsFre registered in System
-time {2018-11-17T00:12:35.233}Pair [Agent] mineralsfree and [Customer] MineralsFre
-time {2018-11-17T00:12:41.125}[Agent] mineralsfree 'Hello'.
-time {2018-11-17T00:12:54.218}[Agent] mineralsfree 'Sorry, cant help you'.
-time {2018-11-17T00:12:57.690}Agent mineralsfree closed Application
+time {2018-11-17T19:16:41.473}{"user":{"name":"Nikita","type":"AGENT","id":-1},"message":"","mt":"REG","chatID":-1}
+time {2018-11-17T19:16:41.474}Agent Nikita registered in System
+time {2018-11-17T19:17:03.881}{"user":{"name":"Nikita","type":"AGENT","id":1},"message":"Hello it\u0027s me","mt":"OK","chatID":-1}
+time {2018-11-17T19:17:07.188}{"user":{"name":"Vasya","type":"CUSTOMER","id":-1},"message":"","mt":"REG","chatID":-1}
+time {2018-11-17T19:17:07.189}Customer Vasya registered in System
+time {2018-11-17T19:17:07.190}Pair [Agent] Nikita and [Customer] Vasya
+time {2018-11-17T19:17:07.686}{"user":{"name":"Vasya","type":"CUSTOMER","id":2},"message":"Hello","mt":"OK","chatID":0}
+time {2018-11-17T19:17:14.327}{"user":{"name":"Vasya","type":"CUSTOMER","id":2},"message":"i\u0027m fine","mt":"OK","chatID":0}
+time {2018-11-17T19:17:23.618}{"user":{"name":"Vasya","type":"CUSTOMER","id":2},"message":"What\u0027s wrong","mt":"OK","chatID":0}
+time {2018-11-17T19:17:29.552}{"user":{"name":"Nikita","type":"AGENT","id":1},"message":"it\u0027s okay","mt":"OK","chatID":0}
+time {2018-11-17T19:17:29.552}[Agent] Nikita 'it's okay'.
+time {2018-11-17T19:17:31.390}{"user":{"name":"Vasya","type":"CUSTOMER","id":2},"message":" left the conversation!","mt":"EXIT","chatID":0}
+time {2018-11-17T19:17:31.391}Customer Vasya closed Application
+time {2018-11-17T19:17:47.440}{"user":{"name":"Nikita","type":"CUSTOMER","id":-1},"message":"","mt":"REG","chatID":-1}
+time {2018-11-17T19:17:47.440}Customer Nikita registered in System
+time {2018-11-17T19:17:47.441}Pair [Agent] Nikita and [Customer] Nikita
+time {2018-11-17T19:17:47.940}{"user":{"name":"Nikita","type":"CUSTOMER","id":3},"message":"Hay","mt":"OK","chatID":1}
+time {2018-11-17T19:17:54.640}{"user":{"name":"Nikita","type":"CUSTOMER","id":3},"message":"hay","mt":"OK","chatID":1}
+time {2018-11-17T19:19:02.925}{"user":{"name":"Nikita","type":"CUSTOMER","id":3},"message":" left the conversation!","mt":"EXIT","chatID":1}
+time {2018-11-17T19:19:02.925}Customer Nikita closed Application
+time {2018-11-17T19:19:14.664}{"user":{"name":"Petya","type":"CUSTOMER","id":-1},"message":"","mt":"REG","chatID":-1}
+time {2018-11-17T19:19:14.664}Customer Petya registered in System
+time {2018-11-17T19:19:14.665}Pair [Agent] Nikita and [Customer] Petya
+time {2018-11-17T19:19:15.165}{"user":{"name":"Petya","type":"CUSTOMER","id":4},"message":"Hi","mt":"OK","chatID":2}
+time {2018-11-17T19:19:27.829}{"user":{"name":"Petya","type":"CUSTOMER","id":4},"message":"How are you?","mt":"OK","chatID":2}
+time {2018-11-17T19:19:38.177}{"user":{"name":"Nikita","type":"AGENT","id":1},"message":"fine Thanks","mt":"OK","chatID":2}
+time {2018-11-17T19:19:38.177}[Agent] Nikita 'fine Thanks'.

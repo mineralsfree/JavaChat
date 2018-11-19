@@ -68,11 +68,11 @@ public class CustomerClient extends Client {
         isRegistred = true;
     }
 
-    public static void main(String[] args){
+
 
 
          //   new CustomerClient();
 
 
-    }
+
 }
